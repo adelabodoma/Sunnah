@@ -1,0 +1,243 @@
+.utl-separator {
+  height: 60px;
+  width: 1px;
+  background-color: #F1E3D7;
+  margin: 0 20.3px;
+  display: inline-block;
+}
+
+.utl-down-arrow {
+  &::after {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    font-size: 7px;
+    margin-#{$left}: 5.2px;
+    -moz-osx-font-smoothing: grayscale;
+    content: $icon-down-arrow;
+  }
+}
+
+.utl-btn-primary {
+  background-color: $primary-color;
+  color: $color-white;
+}
+
+.utl-btn-secondary {
+  background-color: $color-light;
+  color: $color-grey;
+}
+
+.utl-share-button {
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    font-size: rem(18);
+  }
+
+  &:hover {
+    color: $color-dark;
+  }
+}
+
+.utl-btn-outline-primary {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $color-white;
+  }
+}
+
+.utl-btn-outline-white {
+  color: $color-white;
+  border: 1px solid $color-white;
+}
+
+.utl-btn-bg-white {
+  // color: $color-white;
+  background-color: $color-white;
+  border: 1px solid $color-white;
+}
+
+.utl-link {
+  font-family: $font-bold;
+  font-size: rem(14);
+  color: $primary-color;
+  transition: $transition-type;
+
+  &:hover {
+    color: $color-dark;
+  }
+}
+
+.utl-form-label {
+  font-size: rem(14);
+  font-family: $font-bold;
+  margin-bottom: 10px;
+}
+
+.utl-form-label-dark {
+  font-size: rem(14);
+  font-family: $font-bold;
+  color: $color-dark;
+  margin-bottom: 10px;
+}
+
+.utl-no-border {
+  border: unset;
+}
+
+.utl-group-buttons {
+  margin-top: 50px;
+
+  & > *:not(:last-child) {
+    margin-#{$right}: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin-#{$right}: 0;
+    }
+
+    & > * {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.utl-hover-primary {
+  transition: $transition-type;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.utl-card-hover {
+  transition: $transition-type;
+  padding-top: 5px;
+  &:hover {
+    cursor: pointer;
+    // padding-top: 5px;
+    transform: translateY(-5px);
+  }
+}
+
+.utl-d-sm-none {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.utl-sort-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  input {
+    margin-#{$right}: 30px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+
+      @at-root .heading-2 {
+        margin-bottom: 15px !important;
+      }
+
+      .form-input-search {
+        margin-#{$right}: 0 !important;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.utl-padding-scroll {
+  padding-bottom: 85px;
+}
+
+.utl-no-hover {
+  &:hover {
+    transform: unset;
+  }
+}
+
+.utl-section-header {
+  &__content {
+    background-color: $color-white;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: $main-box-shadow;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.utl-image-overlay {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 2;
+    border-radius: 6px;
+    height: 98%;
+  }
+
+  & > div {
+    //   position: relative;
+    z-index: 99;
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+// Overwrite Bootstrap UTL
+.utl-mr-2 {
+  margin-inline-end: 7px!important;
+}
+
+.utl-ml-2 {
+  margin-inline-start: 7px!important;
+}
+
+.utl-opened {
+  height: 100vh;
+  overflow-y: hidden;
+}
