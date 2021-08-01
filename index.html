@@ -84,21 +84,10 @@
                 </div>
             </div>
         </div>
-        <div class="header__nav__search">
-            <div class="container position-relative">
-                <form action="#" class="header__nav__search__form container">
-                    <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
-                    <button class="header__nav__search__form__submit">
-                        <i class="icon icon-search header__nav__item__link--search"></i>
-                    </button>
-                    <!-- <button class="header__nav__search__form__close-btn" id="closeSearchBtn">x</button> -->
-                </form>
-            </div>
-        </div>
         <nav class="header__nav">
-            <div class="container">
+            <div class="container position-relative">
                 <div class="row">
-                    <div class="col-md-7 d-flex">
+                    <div class="col-md-11 d-flex">
                         <a href="" class="header__nav__logo">
                             <img src="assets/img/logo.png" alt="Logo" class="header__nav__logo-img">
                         </a>
@@ -107,12 +96,8 @@
                                 <a href="#" class="header__nav__item__link">الرئيسية</a>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">من نحن </a>
-                            </li>
-                            <li class="header__nav__item">
                                 <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">المركز
-                                    الاعلامى</a>
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">عن المنصة</a>
 
                                 <ul class="dropdown-menu" aria-labelledby="program">
                                     <li class="dropdown-submenu">
@@ -151,7 +136,8 @@
                             </li>
                             <li class="header__nav__item">
                                 <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> مركز الوسائط</a>
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الاشتراك
+                                    والتسجيل</a>
                                 <ul class="dropdown-menu" aria-labelledby="program">
                                     <li class="dropdown-submenu">
                                         <a class="dropdown-item" href="#">برنامج رقم 1</a>
@@ -188,18 +174,70 @@
                                 </ul>
                             </li>
                             <li class="header__nav__item">
-                                <a href="#" class="header__nav__item__link">اتصل بنا</a>
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">البرامج
+                                    الدراسية</a>
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">المدونة </a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">التقويم الدراسي </a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">التواصل والدعم الفني</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-5 header__nav__login">
-                        <a href="">
-                            <img src="assets/img/apple-store.png" class="header__nav__login__image" alt="Apple Store">
-                        </a>
-                        <a href="">
-                            <img src="assets/img/google-play.png" class="header__nav__login__image" alt="Google Play">
-                        </a>
-                        <button class="btn utl-btn-primary header__nav__login__button">تسجيل الدخول</button>
+                    <div class="col-md-1 header__nav__login">
+                        <div class="d-inline-block">
+                            <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
+                        </div>
+                        <button class="btn utl-btn-primary header__nav__login__button"> التسجيل</button>
+                    </div>
+                </div>
+                <div class="header__nav__search">
+                    <div class="container position-relative">
+                        <form action="#" class="header__nav__search__form container">
+                            <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
+                            <button class="header__nav__search__form__submit">
+                                بحث
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -233,30 +271,18 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="swiper-image-container">
-                            <img src="https://source.unsplash.com/random" alt="Lorem Image">
+                            <img src="assets/img/hero.png" alt="Lorem Image">
                         </div>
                         <div class="header__main__content">
                             <div class="container">
-                                <h1 class="header__main__content__heading">على أرض العاصمة</h1>
-                                <h3 class="header__main__content__heading-1">الإندونيسية جاكرتا</h3>
-                                <p class="header__main__content__heading-2">معارض ومتاحف للسيرة النبوية والحضارة
-                                    الإسلامية تفتتح فرعها الدائم.. برعاية رابطة العالم الإسلامي</p>
-                                <button class="btn btn-lg utl-btn-primary">معرفة المزيد</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-image-container">
-                            <img src="https://images.unsplash.com/photo-1624243225303-261cc3cd2fbc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max"
-                                alt="Lorem Image">
-                        </div>
-                        <div class="header__main__content">
-                            <div class="container">
-                                <h1 class="header__main__content__heading">على أرض العاصمة</h1>
-                                <h3 class="header__main__content__heading-1">الإندونيسية جاكرتا</h3>
-                                <p class="header__main__content__heading-2">معارض ومتاحف للسيرة النبوية والحضارة
-                                    الإسلامية تفتتح فرعها الدائم.. برعاية رابطة العالم الإسلامي</p>
-                                <button class="btn btn-lg utl-btn-primary">معرفة ألمزيد</button>
+                                <h1 class="header__main__content__heading">منصة</h1>
+                                <h3 class="header__main__content__heading-1">علوم <span
+                                        class="utl-color-primary">السُنة</span> النبوية</h3>
+                                <p class="header__main__content__heading-2">هي المنصة الأولي المتخصصة في التدريس
+                                    الأكاديمي لعلوم السنة النبوية علي نطاق عالمي بتقنيات التعليم عن بٌعد وفق برامج
+                                    ومساقات متخصصة </p>
+                                <button class="btn utl-btn-primary header__main__content__button">عن المنصة</button>
+                                <button class="btn utl-btn-secondary">التسجيل في البرامج</button>
                             </div>
                         </div>
                     </div>
@@ -266,16 +292,43 @@
                         </div>
                         <div class="header__main__content">
                             <div class="container">
-                                <h1 class="header__main__content__heading">على أرض العاصمة</h1>
-                                <h3 class="header__main__content__heading-1">الإندونيسية جاكرتا</h3>
-                                <p class="header__main__content__heading-2">معارض ومتاحف للسيرة النبوية والحضارة
-                                    الإسلامية تفتتح فرعها الدائم.. برعاية رابطة العالم الإسلامي</p>
-                                <button class="btn btn-lg utl-btn-primary">معرفة المزيد</button>
+                                <h1 class="header__main__content__heading">منصة</h1>
+                                <h3 class="header__main__content__heading-1">علوم <span
+                                        class="utl-color-primary">السُنة</span> النبوية</h3>
+                                <p class="header__main__content__heading-2">هي المنصة الأولي المتخصصة في التدريس
+                                    الأكاديمي لعلوم السنة النبوية علي نطاق عالمي بتقنيات التعليم عن بٌعد وفق برامج
+                                    ومساقات متخصصة </p>
+                                <button class="btn utl-btn-primary header__main__content__button">عن المنصة</button>
+                                <button class="btn utl-btn-secondary">التسجيل في البرامج</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-image-container">
+                            <img src="assets/img/hero.png" alt="Lorem Image">
+                        </div>
+                        <div class="header__main__content">
+                            <div class="container">
+                                <h1 class="header__main__content__heading">منصة</h1>
+                                <h3 class="header__main__content__heading-1">علوم <span
+                                        class="utl-color-primary">السُنة</span> النبوية</h3>
+                                <p class="header__main__content__heading-2">هي المنصة الأولي المتخصصة في التدريس
+                                    الأكاديمي لعلوم السنة النبوية علي نطاق عالمي بتقنيات التعليم عن بٌعد وفق برامج
+                                    ومساقات متخصصة </p>
+                                <button class="btn utl-btn-primary header__main__content__button">عن المنصة</button>
+                                <button class="btn utl-btn-secondary">التسجيل في البرامج</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <!-- <div class="container position-relative"> -->
+                <div class="swiper-navigation">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- </div> -->
+
             </div>
         </div>
         <div class="header__mobile">
@@ -402,6 +455,35 @@
         </div>
     </header>
     <!-- HEADER SECTION END -->
+
+    <!-- ABOUT SECTION START -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="heading-2">عن المنصة</h2>
+                   <h3 class="heading-bold-1">الرؤية</h3>
+                    <p class="mb-5">أن نكون مركزاً رائداً في التعليم والبحث الأكاديمي في السنة النبوية ، يُزود الدارس بقاعدة متكاملة من
+                        معارف وعلوم السنة النبوية ، ويوجهه إلي الاجتهاد في التحلي بأخلاق النبي - صلى الله عليه وسلم -
+                        والالتزام بها
+                    </p>
+                    <h3 class="heading-bold-1">رسالتنا</h3>
+                    <p class="mb-5">نشر تعاليم السنة النبوية علي المستوي العالمي ، وتعزيز تحقيق السنة في حياة المسلمين ، والمساهمة في
+                        التطور الحضاري من خلال عدة محاور وأهداف عامة .
+                    </p>
+                    <button class="btn utl-btn-outline-primary">معرفة المزيد</button>
+                </div>
+                <div class="col-md-4">
+                    <a href="assets/img/video.mp4" data-fancybox="media-videos">
+                        <img src="assets/img/video.png" alt="Video">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION END -->
+
 
 
 

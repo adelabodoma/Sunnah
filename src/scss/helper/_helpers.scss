@@ -31,7 +31,7 @@
 
 .utl-btn-secondary {
   background-color: $color-light;
-  color: $color-grey;
+  color: $primary-color;
 }
 
 .utl-share-button {
@@ -240,4 +240,8 @@
 .utl-opened {
   height: 100vh;
   overflow-y: hidden;
+}
+
+.utl-color-primary {
+  color: $primary-color;
 }

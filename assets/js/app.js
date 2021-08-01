@@ -7,7 +7,11 @@ jQuery(document).ready(function ($) {
     pagination: {
       el: ".header__swiper .swiper-pagination",
       clickable: true,
-    }
+    },
+    navigation: {
+      nextEl: ".header__swiper .swiper-button-next",
+      prevEl: ".header__swiper .swiper-button-prev"
+    },
   });
 
 
