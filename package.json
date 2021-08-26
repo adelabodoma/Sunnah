@@ -1,7 +1,6 @@
 {
-  "name": "Sunnah",
+  "name": "sunnah",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -9,7 +8,8 @@
   "devDependencies": {
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.3"
+    "eslint-plugin-import": "^2.23.3",
+    "gulp": "^4.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +20,15 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.6.0",
-    "sass": "^1.34.0"
-  }
+    "sass": "^1.38.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adelabodoma/Sunnah.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adelabodoma/Sunnah/issues"
+  },
+  "homepage": "https://github.com/adelabodoma/Sunnah#readme",
+  "description": ""
 }
