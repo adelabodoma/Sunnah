@@ -1,12 +1,12 @@
 @charset 'UTF-8';
 
 // ABSTRACT
-@import "abstracts/variables", "abstracts/functions", "abstracts/mixins",
+@import "abstracts/variables.scss", "abstracts/functions", "abstracts/mixins",
   "abstracts/custom";
 
 // BASE
-@import "base/rest", "base/base", "base/fonts", "base/typography", "base/rest",
-  "base/icon/style.scss";
+@import "base/rest", "base/base", "base/fonts", "base/typography",
+  "icon/style.scss";
 
 // COMPONENT
 @import "components/carousel", "components/social-links", "components/scroll",

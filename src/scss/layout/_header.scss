@@ -319,6 +319,10 @@
       height: calc(100vh + 85px);
       padding-top: 85px;
     }
+    @include media-breakpoint-down(md) {
+      height: calc(73vh + 85px);
+      padding-top: 85px;
+    }
   }
 
   @include media-breakpoint-down(lg) {

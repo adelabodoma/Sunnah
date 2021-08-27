@@ -163,6 +163,22 @@
   align-items: center;
   width: 100% !important;
   height: 100% !important;
+ 
+  .color-curve{
+    position: absolute;
+    bottom: 5%;
+    left: 89px;
+    z-index: 999;
+    width: 116px;
+    @include media-breakpoint-down(sm) {
+               
+      position: absolute;
+    bottom: 0%;
+    left: 41px;
+    z-index: 999;
+    width: 116px;
+    }
+  }
   .main-pic{
     width: 100% !important;
     height: 100% !important;
