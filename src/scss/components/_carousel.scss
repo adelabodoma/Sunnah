@@ -66,6 +66,9 @@
       transform: rotate(90deg);
       z-index: 999;
       height: 40px;
+      @include media-breakpoint-down(sm) {
+      width: 78px;
+        }
       .swiper-button-next,
       .swiper-button-prev {
         width: 45px;
@@ -75,6 +78,10 @@
         box-shadow: $main-box-shadow;
         cursor: pointer;
         opacity: 1;
+        @include media-breakpoint-down(sm) {
+          width: 25px;
+          height: 25px;
+          }
     
         &::after {
           font-size: rem(18);

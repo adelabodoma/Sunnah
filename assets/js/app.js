@@ -142,7 +142,15 @@ jQuery(document).ready(function ($) {
   $('#subscribeEmail').keydown(function(){
     $('#invalidEmail').hide()
   })
-
+  var triggerTabList = [].slice.call(document.querySelectorAll('#list-tab a'))
+  triggerTabList.forEach(function (triggerEl) {
+    var tabTrigger = new bootstrap.Tab(triggerEl)
+  
+    triggerEl.addEventListener('click', function (event) {
+      event.preventDefault()
+      tabTrigger.show()
+    })
+  })
   $('.responsive').slick({
     dots: true,
     infinite: false,
