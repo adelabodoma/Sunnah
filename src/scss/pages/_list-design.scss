@@ -400,3 +400,9 @@ flex-direction: column;
         margin-top: 30px; 
     }
   }
+  .reverso2{
+   
+    @include media-breakpoint-down(sm){
+        flex-direction: column-reverse !important; 
+    }
+  }

@@ -1,0 +1,198 @@
+.registeration{
+    border-radius: 30px;
+    background-color: #fff;
+    z-index: -1;
+    .ref-img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+@include media-breakpoint-down(md) {
+    display: none;
+
+ }
+    }
+    .no{
+        border:none !important;
+        text-align: right;
+        direction: rtl;
+    }
+    .form-control {
+        
+       
+        height: 42px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-bottom: 1px solid #ced4da;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-radius: 0;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .input-group{
+        direction: ltr;
+        border-bottom: 0.1px solid #ced4da;
+        justify-content: center;
+        align-items: center;
+        color: #495057;
+    }
+    .colored{
+        color: $primary-color;
+        font-weight: bold;
+    }
+    
+    .dropdown{
+        direction: ltr;
+    }
+    .form-padding{
+        padding: 70px;
+    }
+    .dropdown-item {
+        text-align: right !important;}
+    .btn-secondary {
+        color: $primary-color !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+       border: none !important;
+       outline: none !important;
+       &:hover{
+        border: none !important;
+       }
+       &:focus{
+        border: none !important;
+        box-shadow: none !important;
+       }
+       &:active{
+        border: none !important;
+       }
+       &:visited{
+        border: none !important;
+       }
+    }
+    .dropdown-toggle{
+      
+        &::after{
+            content: "\e900" !important;
+            border: none !important;
+        }
+
+    }
+    .password-toggle{
+        color: #495057;
+    }
+    .forgot{
+        transition: all 0.3s;
+        color: #ababab;
+        font-weight: 600;
+        &:hover{
+            color:$primary-color
+        }
+        
+    }
+}
+
+.header.home.prog{
+    .header__nav__search__form__submit {
+        height: 100%;
+        background-color: #ce7b2c;
+        color: #fff;
+        border: 0;
+        outline: 0;
+        padding: 20px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: absolute;
+        left: 0px;
+        padding: 14px 35px;
+        font-weight: bold;
+    }
+    .header__nav__search {
+        position: absolute;
+        display: none;
+        z-index: 9999;
+        width: 40%;
+        left: 0;
+        top: 10px;
+        border-top: 1px solid;
+        z-index: 999;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px 6px 6px 30px;
+        padding-left: 0;
+    }
+}
+.margino2{
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+    }
+    
+}
+.contact{
+    background-image: url(../img/contact-bg.png);
+    background-size: cover;
+    padding: 50px;
+    .icon-square{
+        border-radius: 30px;
+        background-color: #fff;
+        padding: 20px;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+      color: #fff !important;
+    }
+    .breadcrumb a{
+        color: #fff !important;
+    }
+}
+.unique{
+    direction: rtl !important;
+    text-align: right;
+    
+    .btn-secondary {
+        color: #495057 !important;
+        height: 42px;
+    }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        margin-right: 307%;
+        /* float: left; */
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+        @include media-breakpoint-down(md) {
+            display: inline-block;
+            margin-left: .255em;
+            vertical-align: .255em;
+            margin-right: 414%;
+            content: "";
+    
+        }
+        @include media-breakpoint-down(sm) {
+             
+                display: inline-block;
+                margin-left: .255em;
+                vertical-align: .255em;
+                margin-right: 50%;
+                content: "";
+        
+         }
+    }
+    .dropdown-menu.show{
+        right:0;
+        left: unset;
+        
+    }
+}
+.small{
+    object-fit: contain !important;
+    
+  
+}
