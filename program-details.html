@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/swiper.min.css">
-        <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-        <link rel="stylesheet" href="assets/css/style-rtl.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/simplePagination.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
-        <title>Sunnah - Home</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/style-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/simplePagination.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Sunnah - Home</title>
+</head>
 
 <body>
     <button id="gotToTopButton" title="Go to top">
@@ -28,50 +29,355 @@
             </div>
         </div>
     </div>
- 
- 
- 
- 
- 
- 
- 
- 
- <!-- HEADER SECTION START -->
- <header class="header home prog">
-    <div class="header__top-nav">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="header__top-nav__right">
-                    <img class="header__top-nav__right__image" src="assets/img/logo-top.svg" alt="">
-                    <span class="utl-separator"></span>
-                    <div class="header__top-nav__account dropdown">
-                        <div class="btn-group">
-                            <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon"
-                                type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false"> ‏
-                                <img class="header__top-nav__account__change-lang__icon" src="assets/img/ar.png" />
-                                <span>تغيير اللغة</span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="changeLang">
-                                <a class="dropdown-item" href="#"> عربي</a>
-                                <a class="dropdown-item" href="#">English</a>
+
+
+
+
+
+
+
+
+    <!-- HEADER SECTION START -->
+    <header class="header home prog">
+        <div class="header__top-nav">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="header__top-nav__right">
+                        <img class="header__top-nav__right__image" src="assets/img/logo-top.svg" alt="">
+                        <span class="utl-separator"></span>
+                        <div class="header__top-nav__account dropdown">
+                            <div class="btn-group">
+                                <a href="#" class="header__top-nav__account__change-lang utl-down-arrow icon"
+                                    type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> ‏
+                                    <img class="header__top-nav__account__change-lang__icon" src="assets/img/ar.png" />
+                                    <span>تغيير اللغة</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="changeLang">
+                                    <a class="dropdown-item" href="#"> عربي</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- <div class="d-inline-block">
+                            <!-- <div class="d-inline-block">
                             <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
                         </div> -->
+                        </div>
+                    </div>
+
+
+                    <div class="header__top-nav__left">
+                        <div class="header__top-nav__current-date">
+                            <span>‏السبت 3 يوليو 2021 - 23 ذو القعدة 1442</span>
+                        </div>
+
+                        <span class="utl-separator"></span>
+
+                        <ul class="social-links">
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-links__item">
+                                <a href="#" class="social-links__item__link">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-md-11 d-flex">
+                        <a href="" class="header__nav__logo">
+                            <img src="assets/img/logo.png" alt="Logo" class="header__nav__logo-img">
+                        </a>
+                        <ul class="header__nav__items">
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">الرئيسية</a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">عن المنصة</a>
 
-
-                <div class="header__top-nav__left">
-                    <div class="header__top-nav__current-date">
-                        <span>‏السبت 3 يوليو 2021 - 23 ذو القعدة 1442</span>
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الاشتراك
+                                    والتسجيل</a>
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">البرامج
+                                    الدراسية</a>
+                                <ul class="dropdown-menu" aria-labelledby="program">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                            <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">المدونة </a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">التقويم الدراسي </a>
+                            </li>
+                            <li class="header__nav__item">
+                                <a href="#" class="header__nav__item__link">التواصل والدعم الفني</a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="col-md-1 header__nav__login">
+                        <div class="d-inline-block">
+                            <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
+                        </div>
+                        <button class="btn utl-btn-primary header__nav__login__button"> التسجيل</button>
+                    </div>
+                </div>
+                <div class="header__nav__search">
+                    <div class="container position-relative">
+                        <form action="#" class="header__nav__search__form container">
+                            <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
+                            <button class="header__nav__search__form__submit">
+                                بحث
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-                    <span class="utl-separator"></span>
+        <div class="header__mobile-nav">
+            <div class="container header__mobile-nav__container d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                    <a href="#" class="header__mobile-nav__logo">
+                        <img src="assets/img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <i class="icon icon-search header__mobile-nav__search-button" id="openSearchBtnWithMobile"></i>
+                    <a href="#" class="header__mobile-nav__account" type="button" id="changeLang" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> ‏
+                        <i class="icon icon-user"></i>
+                    </a>
+                    <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
+                        <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
+                        <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <ul class="social-links">
+        <div class="header__mobile">
+            <nav class="nav-drill">
+                <a href="#" id="closeMenu">x</a>
+                <ul class="nav-items nav-level-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            من نحن
+                        </a>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            المركز الإعلامي
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            مركز الوسائط
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                            </li>
+                            <li class="nav-item nav-expand">
+                                <a class="nav-link nav-expand-link" href="#">
+                                    برنامج رقم 1
+                                </a>
+                                <ul class="nav-items nav-expand-content">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            برنامج فرعي رقم 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            اتصل بنا
+                        </a>
+                    </li>
+
+                    <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
+                        id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
+                        تغيير
+                        اللغة</a>
+                    <div class="dropdown-menu" aria-labelledby="changeLang">
+                        <a class="dropdown-item" href="#">عربي</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
+                    <ul class="social-links mt-5 mx-3">
                         <li class="social-links__item">
                             <a href="#" class="social-links__item__link">
                                 <i class="icon icon-youtube"></i>
@@ -93,846 +399,588 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav class="header__nav">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-md-11 d-flex">
-                    <a href="" class="header__nav__logo">
-                        <img src="assets/img/logo.png" alt="Logo" class="header__nav__logo-img">
-                    </a>
-                    <ul class="header__nav__items">
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link">الرئيسية</a>
-                        </li>
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">عن المنصة</a>
-
-                            <ul class="dropdown-menu" aria-labelledby="program">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الاشتراك
-                                والتسجيل</a>
-                            <ul class="dropdown-menu" aria-labelledby="program">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">البرامج
-                                الدراسية</a>
-                            <ul class="dropdown-menu" aria-labelledby="program">
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link">المدونة </a>
-                        </li>
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link">التقويم الدراسي </a>
-                        </li>
-                        <li class="header__nav__item">
-                            <a href="#" class="header__nav__item__link">التواصل والدعم الفني</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-1 header__nav__login">
-                    <div class="d-inline-block">
-                        <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
-                    </div>
-                    <button class="btn utl-btn-primary header__nav__login__button"> التسجيل</button>
-                </div>
-            </div>
-            <div class="header__nav__search">
-                <div class="container position-relative">
-                    <form action="#" class="header__nav__search__form container">
-                        <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا">
-                        <button class="header__nav__search__form__submit">
-                            بحث
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="header__mobile-nav">
-        <div class="container header__mobile-nav__container d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center justify-content-between">
-                <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
-                    <i class="icon icon-menu"></i>
-                </a>
-                <a href="#" class="header__mobile-nav__logo">
-                    <img src="assets/img/logo.png" alt="Logo">
-                </a>
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-                <i class="icon icon-search header__mobile-nav__search-button" id="openSearchBtnWithMobile"></i>
-                <a href="#" class="header__mobile-nav__account" type="button" id="changeLang" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"> ‏
-                    <i class="icon icon-user"></i>
-                </a>
-                <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
-                    <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
-                    <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-    <div class="header__mobile">
-        <nav class="nav-drill">
-            <a href="#" id="closeMenu">x</a>
-            <ul class="nav-items nav-level-1">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        الرئيسية
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        من نحن
-                    </a>
-                </li>
-                <li class="nav-item nav-expand">
-                    <a class="nav-link nav-expand-link" href="#">
-                        المركز الإعلامي
-                    </a>
-                    <ul class="nav-items nav-expand-content">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                برنامج رقم 1
-                            </a>
-                        </li>
-                        <li class="nav-item nav-expand">
-                            <a class="nav-link nav-expand-link" href="#">
-                                برنامج رقم 1
-                            </a>
-                            <ul class="nav-items nav-expand-content">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        برنامج فرعي رقم 1
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        برنامج فرعي رقم 1
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        برنامج فرعي رقم 1
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-expand">
-                    <a class="nav-link nav-expand-link" href="#">
-                        مركز الوسائط
-                    </a>
-                    <ul class="nav-items nav-expand-content">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                برنامج رقم 1
-                            </a>
-                        </li>
-                        <li class="nav-item nav-expand">
-                            <a class="nav-link nav-expand-link" href="#">
-                                برنامج رقم 1
-                            </a>
-                            <ul class="nav-items nav-expand-content">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        برنامج فرعي رقم 1
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        برنامج فرعي رقم 1
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        برنامج فرعي رقم 1
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        اتصل بنا
-                    </a>
-                </li>
-
-                <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
-                    id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ‏
-                    تغيير
-                    اللغة</a>
-                <div class="dropdown-menu" aria-labelledby="changeLang">
-                    <a class="dropdown-item" href="#">عربي</a>
-                    <a class="dropdown-item" href="#">English</a>
-                </div>
-                <ul class="social-links mt-5 mx-3">
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="social-links__item">
-                        <a href="#" class="social-links__item__link">
-                            <i class="icon icon-facebook"></i>
-                        </a>
-                    </li>
                 </ul>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-<!-- HEADER SECTION END -->
-
-
-
-<!-- program header SECTION  -->
-<div class="program-header">
-   
-      <div class="container">
-           <!-- breadcrumb  -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#"><img src="assets/img/home-icon.png" alt=""></a></li>
-          <li class="breadcrumb-item"><a href="#">البرامج الدراسية</a></li>
-          <li class="breadcrumb-item active" aria-current="page">دورة مجانية عبر الانترنت من منصة علوم السنة النبوية بعنوان: مدخل الى السيرة النبوية</li>
-        </ol>
-      </nav>
-      <!-- breadcrumb end  -->
-<div class="row">
-<div class="col-md-7">
-    <span class="badge rounded-pill ">مجاني</span>
-    <p class="heading-1 mt-3">
-        دورة مجانية عبر الانترنت من منصة علوم السنة النبوية بعنوان: مدخل الى السيرة النبوية
-    </p>
-    <button class="btn utl-btn-primary header__nav__login__button"> اشترك في البرنامج</button>
-</div>
-<div class="col-md-5">
-<img src="assets/img/build.png" class="big-img" alt="">
-</div>
-</div>
-  <!-- information  -->
-  <div class="inf shadow">
-<div class="row modify">
-<div class=" col-lg col-md-6 p-0">
-    <div class="inf-box shadow first">
-<img src="assets/img/inf1.png" alt="">
-<h5 class="heading-3-grey">اللغة</h5>
-<h3 class="heading-3">العربية</h3>
-    </div>
-</div>
-<div class=" col-lg col-md-6 p-0">
-    <div class="inf-box shadow second">
-<img src="assets/img/inf2.png" alt="">
-<h5 class="heading-3-grey">تاريخ البدء</h5>
-<h3 class="heading-3">‏5 يوليو 2021</h3>
-    </div>
-</div>
-<div class=" col-lg col-md-6 p-0">
-    <div class="inf-box shadow">
-<img src="assets/img/inf3.png" alt="">
-<h5 class="heading-3-grey">عدد سنوات الدراسة</h5>
-<h3 class="heading-3">‏4 سنوات</h3>
-    </div>
-</div>
-<div class=" col-lg col-md-6 p-0">
-    <div class="inf-box shadow">
-<img src="assets/img/inf4.png" alt="">
-<h5 class="heading-3-grey">المستوى</h5>
-<h3 class="heading-3">مستوى متوسط</h3>
-    </div>
-</div>
-<div class="col-lg col-md-12 p-0">
-    <div class="inf-box shadow last">
-<img src="assets/img/inf2.png" alt="">
-<h5 class="heading-3-grey">تاريخ الانتهاء</h5>
-<h3 class="heading-3">‏5 يوليو 2021</h3>
-    </div>
-</div>
-</div>
-</div>
-<!-- end of information -->
-      </div>
-     
-</div>
-
-
-
-<!-- program header SECTION END -->
-
-
-
-
-<!-- tabs SECTION  -->
-<div class="container data-tabs">
-    <div class="row">
-        <div class="col-xl-4 col-md-12 col-sm-12">
-          <div class="list-group shadow" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">وصف البرنامج</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">  المناهج الدراسية </a>
-            <a class="list-group-item list-group-item-action" id="list-third-list" data-bs-toggle="list" href="#list-third" role="tab" aria-controls="list-profile">  ستتعلم في هذا التخصص </a>
-
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">مخطّط المنهج الدراسي</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">أعضاء هيئة التدريس</a>
-            <a class="list-group-item list-group-item-action" id="list-last-list" data-bs-toggle="list" href="#list-last" role="tab" aria-controls="list-settings">  الشهادات التي تحصل عليها</a>
+            </nav>
 
         </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+
+    <!-- program header SECTION  -->
+    <div class="program-header">
+
+        <div class="container">
+            <!-- breadcrumb  -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"><img src="assets/img/home-icon.png" alt=""></a></li>
+                    <li class="breadcrumb-item"><a href="#">البرامج الدراسية</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">دورة مجانية عبر الانترنت من منصة علوم السنة
+                        النبوية بعنوان: مدخل الى السيرة النبوية</li>
+                </ol>
+            </nav>
+            <!-- breadcrumb end  -->
+            <div class="row">
+                <div class="col-md-7">
+                    <span class="badge rounded-pill ">مجاني</span>
+                    <p class="heading-1 mt-3">
+                        دورة مجانية عبر الانترنت من منصة علوم السنة النبوية بعنوان: مدخل الى السيرة النبوية
+                    </p>
+                    <button class="btn utl-btn-primary header__nav__login__button"> اشترك في البرنامج</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="assets/img/build.png" class="big-img" alt="">
+                </div>
+            </div>
+            <!-- information  -->
+            <div class="inf shadow">
+                <div class="row modify">
+                    <div class=" col-lg col-md-6 p-0">
+                        <div class="inf-box shadow first">
+                            <img src="assets/img/inf1.png" alt="">
+                            <h5 class="heading-3-grey">اللغة</h5>
+                            <h3 class="heading-3">العربية</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg col-md-6 p-0">
+                        <div class="inf-box shadow second">
+                            <img src="assets/img/inf2.png" alt="">
+                            <h5 class="heading-3-grey">تاريخ البدء</h5>
+                            <h3 class="heading-3">‏5 يوليو 2021</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg col-md-6 p-0">
+                        <div class="inf-box shadow">
+                            <img src="assets/img/inf3.png" alt="">
+                            <h5 class="heading-3-grey">عدد سنوات الدراسة</h5>
+                            <h3 class="heading-3">‏4 سنوات</h3>
+                        </div>
+                    </div>
+                    <div class=" col-lg col-md-6 p-0">
+                        <div class="inf-box shadow">
+                            <img src="assets/img/inf4.png" alt="">
+                            <h5 class="heading-3-grey">المستوى</h5>
+                            <h3 class="heading-3">مستوى متوسط</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-12 p-0">
+                        <div class="inf-box shadow last">
+                            <img src="assets/img/inf2.png" alt="">
+                            <h5 class="heading-3-grey">تاريخ الانتهاء</h5>
+                            <h3 class="heading-3">‏5 يوليو 2021</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of information -->
         </div>
-        <div class="col-xl-8 col-md-12 col-sm-12">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-               
-                
+
+    </div>
 
 
-                <div>
-                    <input type="checkbox" class="read-more-state" id="post-1" />
-                  <p class="heading-2">
-                    وصف البرنامج
-                  </p>
-                    <p class="read-more-wrap">
-                        السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين” رواه الترمذي وغيره وقال: حسن صحيح أي طريقتي ـ والسُّنّة في اصطلاح الفقهاء هي ما يُثاب المرء على فعله ولا يُعاقَب على تركه كصلاة الضُّحى مثلاً ، والسنة في اصطلاح المحدثين هي ما أضيف إلى النبي ـ صلى الله عليه وسلم ـ قولاً أو فعلاً أو وصفًا أو تقريرًا.
-    
-    وهناك أهل السُّنة عند المتكلِّمين فيما يُقابل الطوائف الأخرى، وتحقيق هذه السُّنّة أي: المحافَظة عليها وإخراج الدّخيل منها ودفع الشُّبَهِ عنها، والاحتراس عند روايتها، هذا التحقيق بدأه النبي صلى الله عليه وسلم لأنّ القرآن كان إذا نَزلتْ منه آياتٌ أو سورة، أمرَ النبيُّ صلى الله عليه وسلم أن يُكتب ما<span class="read-more-target">نزل ونَهى أولاً عن كتابة الحديث حتى لا يختلِط كلامه بكلام الله سبحانه.
-    
-        ثم بعد ذلك رخّص لبعض الصحابة في كتابة الأحاديث كعبد الله بن عمرو بن العاص رضي الله عنه والصحابة عندما لحِق الرسول صلى الله عليه وسلم بالرفيق الأعلى احتاجُوا في بعض الأحيان إلى أحكام فقهيّة لم يجدوها في كتاب الله تعالى، فكان يسأل بعضهم بعضًا هل سمع في هذه الحادثة شيئًا وقبل أن يلحَق الرسول عليه الصلاة والسلام بالرفيق الأعلى قال هذا الحديث “مَنْ كَذَبَ على متعمِّدًا فليتبوّأ مِقعدَه من النّار” رواه البخاري ومسلم، وهذا هو الأصل في تحقيق السنة النبوية ، فكان الصحابة يتحرّجون كثيرًا من رواية السنة، وكان لبعض الخلفاء مواقف شديدة ضدّ الذين يُكثرون من روايتها وموقف عمر رضي الله عنه معروف من أبي هريرة، وابن مسعود، وأبي مسعود الأنصاري.
-        
-        استأذَن أبو موسى على عمر ثلاثَ مرّات فلم يُؤذَن له فولَّى، فناداه عمر وقال:”لم ولَّيْتَ” ؟ فذكر له أنه سمع حديثًا عن النبي ـ صلى الله عليه وسلم ـ يُفيد هذا المعنى “إذا استأذَن أحدُكم ثلاثَ مرات فلم يُؤذَن له فليرجِع” رواه البخاري ومسلم فقال: والله لا أتركُك حتّى تأتى لي بمَن يشهد معك أنك سمِعتَ هذا من رسول الله صلى الله عليه وسلم ، ولم يتركْه حتى جاء بمَن شهدوا معه أن هذا القَول منسوب إلى النبي صلى الله عليه وسلم وسيّدنا أبو بك رضي الله عنه كما قرأت في كتاب تاريخ التشريع للشيخ محمد الخضري، جمع الصّحابة أو نادَى في الصحابة وحذّرهم من أن يُحدِّثوا عن النبيِّ ـ صلّى الله عليه وسلم ـ أحاديثَ يختلِفون فيها، فالناس بعدهم أشد اختلافًا.
-                       </span>  </p>
-                    <label for="post-1" class="read-more-trigger"></label>
-                  </div>
-            </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                
-                <div class="container">
-                    <p class="heading-2">
-                        المناهج الدراسية
-                    </p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="program-box">
-                                <div class="row">
-                <div class="col-md-4">
-                    <img  src="assets/img/build.png" class="prog-img" alt="Video">
-                </div>
-                <div class="col-md-8">
-                    <div class="desc">
-                        <p class="heading-3">نص بديل للعنوان</p>
 
-                        <p>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-                        <p><img  src="assets/img/inf2.png" alt="Video">3 يوليو 2021</p>
-                                   
-                      
-                     </div>
-                </div>
-                                </div>
-                                
-                                
-                                
-                                
-                           </div>
-                        </div>
-                        <div class=" col-md-12">
-                            <div class="program-box">
-                                <div class="row">
-                <div class="col-md-4">
-                    <img  src="assets/img/build.png" class="prog-img" alt="Video">
-                </div>
-                <div class="col-md-8">
-                    <div class="desc">
-                        <p class="heading-3">نص بديل للعنوان</p>
-                        <p>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-                        <p><img  src="assets/img/inf2.png" alt="Video">3 يوليو 2021</p>
-                                   
-                      
-                     </div>
-                </div>
-                                </div>
-                                
-                                
-                                
-                                
-                           </div>
-                        </div>
-                        <div class=" col-md-12">
-                            <div class="program-box">
-                                <div class="row">
-                <div class="col-md-4">
-                    <img  src="assets/img/build.png" class="prog-img" alt="Video">
-                </div>
-                <div class="col-md-8">
-                    <div class="desc">
-                        <p class="heading-3">نص بديل للعنوان</p>
-                        <p>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-                        <p><img  src="assets/img/inf2.png" alt="Video">3 يوليو 2021</p>
-                                   
-                      
-                     </div>
-                </div>
-                                </div>
-                                
-                                
-                                
-                                
-                           </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="list-third" role="tabpanel" aria-labelledby="list-third-list">
-                <p class="heading-2">ستتعلم في هذا التخصص</p>
-                <div class="specialization">
-                    <p>
-                        السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة   
-                    </p>
-                    <p>
-                        السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة   
-                    </p>
-                    <p>
-                        السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة   
-                    </p>
-                    <p>
-                        السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة   
-                    </p>
-                </div>
+    <!-- program header SECTION END -->
 
-            </div>
 
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                <p class="heading-2">
-                    مخطّط المنهج الدراسي
-                </p>
-                <div class="container">
-                    <div class="safer">
-                 <!-- accordion  -->
-                 <div class="parent">
-                    <button class="accordion2">   نص بديل للعنوان</button>
-                    <div class="panel">
-                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
-                    </div>
-                 </div>
-                 <div class="parent">
-                    <button class="accordion2">   نص بديل للعنوان</button>
-                    <div class="panel">
-                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
-                    </div>
-                 </div>
-                 <div class="parent">
-                    <button class="accordion2">   نص بديل للعنوان</button>
-                    <div class="panel">
-                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
-                    </div>
-                 </div>
-                 <div class="parent">
-                    <button class="accordion2">   نص بديل للعنوان</button>
-                    <div class="panel">
-                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
-                    </div>
-                 </div>
-               
-                
-               
-                
-                <!-- accordion  -->
-                    </div>
-                   
-                    
-                </div>
-             
-            </div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                <!-- teachers-->
-<div class="teachers-tab">
-    <div class="container">
-        <p class="heading-2">
-            المناهج الدراسية
-        </p>
+
+
+    <!-- tabs SECTION  -->
+    <div class="container data-tabs">
         <div class="row">
-            <div class="col-md-12">
-                <div class="program-box">
-                    <div class="row">
-    <div class="col-md-3 text-center">
-        <img  src="assets/img/build.png" class="prog-img" alt="Video">
-    </div>
-    <div class="col-md-9">
-        <div class="desc">
-            <p class="heading-3">نص بديل للعنوان</p>
+            <div class="col-xl-4 col-md-12 col-sm-12">
+                <div class="list-group shadow" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                        href="#list-home" role="tab" aria-controls="list-home">وصف البرنامج</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="list-profile"> المناهج الدراسية </a>
+                    <a class="list-group-item list-group-item-action" id="list-third-list" data-bs-toggle="list"
+                        href="#list-third" role="tab" aria-controls="list-profile"> ستتعلم في هذا التخصص </a>
 
-            <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-            <div class="d-flex mt-3"> 
-                <a href="#"><img  src="assets/img/l2.png" alt="Video"></a>
-                <a href="#"><img  src="assets/img/l3.png" alt="Video"></a>
-                <a href="#"><img  src="assets/img/l4.png" alt="Video"></a>
-               </div>                       
-          
-         </div>
-    </div>
-                    </div>
-                    
-                    
-                    
-                    
-               </div>
-            </div>
-            <div class=" col-md-12">
-                <div class="program-box">
-                    <div class="row">
-    <div class="col-md-3 text-center">
-        <img  src="assets/img/build.png" class="prog-img" alt="Video">
-    </div>
-    <div class="col-md-9">
-        <div class="desc">
-            <p class="heading-3">نص بديل للعنوان</p>
-            <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-            <div class="d-flex mt-3">  
-            <a href="#"><img  src="assets/img/l2.png" alt="Video"></a>
-            <a href="#"><img  src="assets/img/l3.png" alt="Video"></a>
-            <a href="#"><img  src="assets/img/l4.png" alt="Video"></a>
-           </div>
-                       
-          
-         </div>
-    </div>
-                    </div>
-                    
-                    
-                    
-                    
-               </div>
-            </div>
-            <div class=" col-md-12">
-                <div class="program-box">
-                    <div class="row">
-    <div class="col-md-3 text-center">
-        <img  src="assets/img/build.png" class="prog-img" alt="Video">
-    </div>
-    <div class="col-md-9">
-        <div class="desc">
-            <p class="heading-3">نص بديل للعنوان</p>
-            <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-            <div class="d-flex mt-3"> 
-                <a href="#"><img  src="assets/img/l2.png" alt="Video"></a>
-                <a href="#"><img  src="assets/img/l3.png" alt="Video"></a>
-                <a href="#"><img  src="assets/img/l4.png" alt="Video"></a>
-               </div>                       
-          
-         </div>
-    </div>
-                    </div>
-                    
-                    
-                    
-                    
-               </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- teachers END -->
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="list-messages">مخطّط المنهج الدراسي</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="list-settings">أعضاء هيئة التدريس</a>
+                    <a class="list-group-item list-group-item-action" id="list-last-list" data-bs-toggle="list"
+                        href="#list-last" role="tab" aria-controls="list-settings"> الشهادات التي تحصل عليها</a>
 
+                </div>
             </div>
-            <div class="tab-pane fade" id="list-last" role="tabpanel" aria-labelledby="list-settings-list">
-              
-                <div class="container certificate">
-                    <p class="heading-2">الشهادات التي تحصل عليها</p>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="program-box">
-                                <div class="row">
-                <div class="col-md-3 text-center">
-                    <img  src="assets/img/build.png" class="prog-img" alt="Video">
-                </div>
-                <div class="col-md-9">
-                    <div class="desc">
-                        <p class="heading-3">نص بديل للعنوان</p>
-            
-                        <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-                        <div class="mt-3"> 
-                            <a href="#" class="show-link">عرض الشهادة</a>
-                           
-                           </div>                       
-                      
-                     </div>
-                </div>
-                                </div>
-                                
-                                
-                                
-                                
-                           </div>
-                        </div>
-                        <div class=" col-md-12">
-                            <div class="program-box">
-                                <div class="row">
-                <div class="col-md-3 text-center">
-                    <img  src="assets/img/build.png" class="prog-img" alt="Video">
-                </div>
-                <div class="col-md-9">
-                    <div class="desc">
-                        <p class="heading-3">نص بديل للعنوان</p>
-                        <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-                        <div class="mt-3"> 
-                            <a href="#" class="show-link">عرض الشهادة</a>
-                           
-                           </div> 
-                                   
-                      
-                     </div>
-                </div>
-                                </div>
-                                
-                                
-                                
-                                
-                           </div>
-                        </div>
-                        <div class=" col-md-12">
-                            <div class="program-box">
-                                <div class="row">
-                <div class="col-md-3 text-center">
-                    <img  src="assets/img/build.png" class="prog-img" alt="Video">
-                </div>
-                <div class="col-md-9">
-                    <div class="desc">
-                        <p class="heading-3">نص بديل للعنوان</p>
-                        <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>         
-                        <div class="mt-3"> 
-                            <a href="#" class="show-link">عرض الشهادة</a>
-                           
-                           </div>                     
-                      
-                     </div>
-                </div>
-                                </div>
-                                
-                                
-                                
-                                
-                           </div>
+            <div class="col-xl-8 col-md-12 col-sm-12">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+
+
+
+
+                        <div>
+                            <input type="checkbox" class="read-more-state" id="post-1" />
+                            <p class="heading-2">
+                                وصف البرنامج
+                            </p>
+                            <p class="read-more-wrap">
+                                السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول النبي
+                                “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين” رواه الترمذي وغيره وقال: حسن
+                                صحيح أي طريقتي ـ والسُّنّة في اصطلاح الفقهاء هي ما يُثاب المرء على فعله ولا يُعاقَب على
+                                تركه كصلاة الضُّحى مثلاً ، والسنة في اصطلاح المحدثين هي ما أضيف إلى النبي ـ صلى الله
+                                عليه وسلم ـ قولاً أو فعلاً أو وصفًا أو تقريرًا.
+
+                                وهناك أهل السُّنة عند المتكلِّمين فيما يُقابل الطوائف الأخرى، وتحقيق هذه السُّنّة أي:
+                                المحافَظة عليها وإخراج الدّخيل منها ودفع الشُّبَهِ عنها، والاحتراس عند روايتها، هذا
+                                التحقيق بدأه النبي صلى الله عليه وسلم لأنّ القرآن كان إذا نَزلتْ منه آياتٌ أو سورة، أمرَ
+                                النبيُّ صلى الله عليه وسلم أن يُكتب ما<span class="read-more-target">نزل ونَهى أولاً عن
+                                    كتابة الحديث حتى لا يختلِط كلامه بكلام الله سبحانه.
+
+                                    ثم بعد ذلك رخّص لبعض الصحابة في كتابة الأحاديث كعبد الله بن عمرو بن العاص رضي الله
+                                    عنه والصحابة عندما لحِق الرسول صلى الله عليه وسلم بالرفيق الأعلى احتاجُوا في بعض
+                                    الأحيان إلى أحكام فقهيّة لم يجدوها في كتاب الله تعالى، فكان يسأل بعضهم بعضًا هل سمع
+                                    في هذه الحادثة شيئًا وقبل أن يلحَق الرسول عليه الصلاة والسلام بالرفيق الأعلى قال هذا
+                                    الحديث “مَنْ كَذَبَ على متعمِّدًا فليتبوّأ مِقعدَه من النّار” رواه البخاري ومسلم،
+                                    وهذا هو الأصل في تحقيق السنة النبوية ، فكان الصحابة يتحرّجون كثيرًا من رواية السنة،
+                                    وكان لبعض الخلفاء مواقف شديدة ضدّ الذين يُكثرون من روايتها وموقف عمر رضي الله عنه
+                                    معروف من أبي هريرة، وابن مسعود، وأبي مسعود الأنصاري.
+
+                                    استأذَن أبو موسى على عمر ثلاثَ مرّات فلم يُؤذَن له فولَّى، فناداه عمر وقال:”لم
+                                    ولَّيْتَ” ؟ فذكر له أنه سمع حديثًا عن النبي ـ صلى الله عليه وسلم ـ يُفيد هذا المعنى
+                                    “إذا استأذَن أحدُكم ثلاثَ مرات فلم يُؤذَن له فليرجِع” رواه البخاري ومسلم فقال: والله
+                                    لا أتركُك حتّى تأتى لي بمَن يشهد معك أنك سمِعتَ هذا من رسول الله صلى الله عليه وسلم
+                                    ، ولم يتركْه حتى جاء بمَن شهدوا معه أن هذا القَول منسوب إلى النبي صلى الله عليه وسلم
+                                    وسيّدنا أبو بك رضي الله عنه كما قرأت في كتاب تاريخ التشريع للشيخ محمد الخضري، جمع
+                                    الصّحابة أو نادَى في الصحابة وحذّرهم من أن يُحدِّثوا عن النبيِّ ـ صلّى الله عليه
+                                    وسلم ـ أحاديثَ يختلِفون فيها، فالناس بعدهم أشد اختلافًا.
+                                </span> </p>
+                            <label for="post-1" class="read-more-trigger"></label>
                         </div>
                     </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+
+                        <div class="container">
+                            <p class="heading-2">
+                                المناهج الدراسية
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="program-box">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="desc">
+                                                    <p class="heading-3">نص بديل للعنوان</p>
+
+                                                    <p>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس
+                                                        المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                                    <p><img src="assets/img/inf2.png" alt="Video">3 يوليو 2021</p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class=" col-md-12">
+                                    <div class="program-box">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="desc">
+                                                    <p class="heading-3">نص بديل للعنوان</p>
+                                                    <p>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس
+                                                        المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                                    <p><img src="assets/img/inf2.png" alt="Video">3 يوليو 2021</p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class=" col-md-12">
+                                    <div class="program-box">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="desc">
+                                                    <p class="heading-3">نص بديل للعنوان</p>
+                                                    <p>لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل وليس
+                                                        المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                                    <p><img src="assets/img/inf2.png" alt="Video">3 يوليو 2021</p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-third" role="tabpanel" aria-labelledby="list-third-list">
+                        <p class="heading-2">ستتعلم في هذا التخصص</p>
+                        <div class="specialization">
+                            <p>
+                                السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة
+                            </p>
+                            <p>
+                                السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة
+                            </p>
+                            <p>
+                                السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة
+                            </p>
+                            <p>
+                                السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <p class="heading-2">
+                            مخطّط المنهج الدراسي
+                        </p>
+                        <div class="container">
+                            <div class="safer">
+                                <!-- accordion  -->
+                                <div class="parent">
+                                    <button class="accordion2"> نص بديل للعنوان</button>
+                                    <div class="panel">
+                                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول
+                                            النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
+                                    </div>
+                                </div>
+                                <div class="parent">
+                                    <button class="accordion2"> نص بديل للعنوان</button>
+                                    <div class="panel">
+                                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول
+                                            النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
+                                    </div>
+                                </div>
+                                <div class="parent">
+                                    <button class="accordion2"> نص بديل للعنوان</button>
+                                    <div class="panel">
+                                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول
+                                            النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
+                                    </div>
+                                </div>
+                                <div class="parent">
+                                    <button class="accordion2"> نص بديل للعنوان</button>
+                                    <div class="panel">
+                                        <p>السنة النبوية لها عدة معانٍ فالسُّنّة في اللغة: هي الطريقة والمَنهج، منها قول
+                                            النبي “فعليكم بسُنّتي ،وسُنّة الخلفاء الراشدين المَهْدِيِّين</p>
+                                    </div>
+                                </div>
+
+
+
+
+                                <!-- accordion  -->
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <!-- teachers-->
+                        <div class="teachers-tab">
+                            <div class="container">
+                                <p class="heading-2">
+                                    المناهج الدراسية
+                                </p>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="program-box">
+                                            <div class="row">
+                                                <div class="col-md-3 text-center">
+                                                    <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="desc">
+                                                        <p class="heading-3">نص بديل للعنوان</p>
+
+                                                        <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية
+                                                            هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.
+                                                        </p>
+                                                        <div class="d-flex mt-3">
+                                                            <a href="#"><img src="assets/img/l2.png" alt="Video"></a>
+                                                            <a href="#"><img src="assets/img/l3.png" alt="Video"></a>
+                                                            <a href="#"><img src="assets/img/l4.png" alt="Video"></a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-12">
+                                        <div class="program-box">
+                                            <div class="row">
+                                                <div class="col-md-3 text-center">
+                                                    <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="desc">
+                                                        <p class="heading-3">نص بديل للعنوان</p>
+                                                        <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية
+                                                            هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.
+                                                        </p>
+                                                        <div class="d-flex mt-3">
+                                                            <a href="#"><img src="assets/img/l2.png" alt="Video"></a>
+                                                            <a href="#"><img src="assets/img/l3.png" alt="Video"></a>
+                                                            <a href="#"><img src="assets/img/l4.png" alt="Video"></a>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-12">
+                                        <div class="program-box">
+                                            <div class="row">
+                                                <div class="col-md-3 text-center">
+                                                    <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="desc">
+                                                        <p class="heading-3">نص بديل للعنوان</p>
+                                                        <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية
+                                                            هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.
+                                                        </p>
+                                                        <div class="d-flex mt-3">
+                                                            <a href="#"><img src="assets/img/l2.png" alt="Video"></a>
+                                                            <a href="#"><img src="assets/img/l3.png" alt="Video"></a>
+                                                            <a href="#"><img src="assets/img/l4.png" alt="Video"></a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- teachers END -->
+
+                    </div>
+                    <div class="tab-pane fade" id="list-last" role="tabpanel" aria-labelledby="list-settings-list">
+
+                        <div class="container certificate">
+                            <p class="heading-2">الشهادات التي تحصل عليها</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="program-box">
+                                        <div class="row">
+                                            <div class="col-md-3 text-center">
+                                                <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="desc">
+                                                    <p class="heading-3">نص بديل للعنوان</p>
+
+                                                    <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي
+                                                        الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                                    <div class="mt-3">
+                                                        <a href="#" class="show-link">عرض الشهادة</a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class=" col-md-12">
+                                    <div class="program-box">
+                                        <div class="row">
+                                            <div class="col-md-3 text-center">
+                                                <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="desc">
+                                                    <p class="heading-3">نص بديل للعنوان</p>
+                                                    <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي
+                                                        الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                                    <div class="mt-3">
+                                                        <a href="#" class="show-link">عرض الشهادة</a>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class=" col-md-12">
+                                    <div class="program-box">
+                                        <div class="row">
+                                            <div class="col-md-3 text-center">
+                                                <img src="assets/img/build.png" class="prog-img" alt="Video">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="desc">
+                                                    <p class="heading-3">نص بديل للعنوان</p>
+                                                    <p class=" pt-2">لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي
+                                                        الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر.</p>
+                                                    <div class="mt-3">
+                                                        <a href="#" class="show-link">عرض الشهادة</a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-          </div>
-        </div>
-      </div>
-</div>
-
-<!-- tabs SECTION END -->
-
-
-
-
-<footer>
-  
-    <div class="container">
-        <div class="row">
-          <div class=" col-xl col-md-6">
-              <h4>
-                  علوم السُنة النبوية
-              </h4>
-              <p class="mt-3">
-                  هي المنصة الأولي المتخصصة في التدريس الأكاديمي لعلوم السنة النبوية علي نطاق عالمي بتقنيات التعليم عن بٌعد وفق برامج ومساقات متخصصة 
-              </p>
-              <div class="social mt-3">
-              <a href="#"><img src="assets/img/l3.png" alt=""></a>
-              <a href="#"><img src="assets/img/l4.png" alt=""></a>
-              <a href="#"><img src="assets/img/l2.png" alt=""></a>
-              <a href="#"><img src="assets/img/l1.png" alt=""></a>
-              
-              </div>
-              </div>
-<div class=" col-xl col-md-6">
-<h4>
-عن المنصة
-</h4>
-<a href="#" class="mt-3">التعريف بالمنصة </a>
-<a href="#" class="mt-3">الرؤية و الرسالة </a>
-<a href="#" class="mt-3">الهيكل الإداري</a>
-<a href="#" class="mt-3">الهيكل التنظيمي </a>
-
-
-</div>
-<div class=" col-xl col-md-6">
-<h4>
-البرامج الدراسية  
-</h4>
-<a href="#" class="mt-3">البرامج و المساقات الحالية </a>
-<a href="#" class="mt-3">مساقات و برامج مرتقبة </a>
-<a href="#" class="mt-3">طريقة التدريس </a>
-<a href="#" class="mt-3">كيفية الاشتراك</a>
-
-</div>
-<div class=" col-xl col-md-6">
-<h4>
-الاشتراك والتسجيل   
-</h4>
-<a href="#" class="mt-3">إنشاء حساب جديد</a>
-<a href="#" class="mt-3">تسجيل الدخول</a>
-<a href="#" class="mt-3">معايير الاشتراك </a>
-<a href="#" class="mt-3">المرشد الشخصي</a>
-
-</div>
-<div class=" col-xl col-md-6">
-<h4>
-  الدعم والتواصل   
-</h4>
-<a href="#" class="mt-3">تواصل معنا</a>
-<a href="#" class="mt-3">الدعم الفني</a>
-<a href="#" class="mt-3">الأسئلة الشائعة</a>
-<a href="#" class="mt-3">خريطة الموقع</a>
-
-</div>
-
-        </div>
-        <div class="row justify-content-center align-items-center mt-5 mb-5">
-            <div class="col-md-4 text-center">خريطة الموقع</div>
-            <div class="col-md-4 text-center">المرشد الشخصي</div>
-            <div class="col-md-4 text-center">سياسة الخصوصية</div>
         </div>
     </div>
-    <hr style="border-top: 1px dashed #fff; " class="w-75" />
-    <p class="text-center" style="color:#ABABAB;"> ©جميع الحقوق محفوظة لمنصة علوم السُنة النبوية 2021</p>
-</footer>
-<!-- end of footer -->
+
+    <!-- tabs SECTION END -->
+
+
+
+
+    <footer>
+
+        <div class="container">
+            <div class="row">
+                <div class=" col-xl col-md-6">
+                    <h4>
+                        علوم السُنة النبوية
+                    </h4>
+                    <p class="mt-3">
+                        هي المنصة الأولي المتخصصة في التدريس الأكاديمي لعلوم السنة النبوية علي نطاق عالمي بتقنيات
+                        التعليم عن بٌعد وفق برامج ومساقات متخصصة
+                    </p>
+                    <div class="social mt-3">
+                        <a href="#"><img src="assets/img/l3.png" alt=""></a>
+                        <a href="#"><img src="assets/img/l4.png" alt=""></a>
+                        <a href="#"><img src="assets/img/l2.png" alt=""></a>
+                        <a href="#"><img src="assets/img/l1.png" alt=""></a>
+
+                    </div>
+                </div>
+                <div class=" col-xl col-md-6">
+                    <h4>
+                        عن المنصة
+                    </h4>
+                    <a href="#" class="mt-3">التعريف بالمنصة </a>
+                    <a href="#" class="mt-3">الرؤية و الرسالة </a>
+                    <a href="#" class="mt-3">الهيكل الإداري</a>
+                    <a href="#" class="mt-3">الهيكل التنظيمي </a>
+
+
+                </div>
+                <div class=" col-xl col-md-6">
+                    <h4>
+                        البرامج الدراسية
+                    </h4>
+                    <a href="#" class="mt-3">البرامج و المساقات الحالية </a>
+                    <a href="#" class="mt-3">مساقات و برامج مرتقبة </a>
+                    <a href="#" class="mt-3">طريقة التدريس </a>
+                    <a href="#" class="mt-3">كيفية الاشتراك</a>
+
+                </div>
+                <div class=" col-xl col-md-6">
+                    <h4>
+                        الاشتراك والتسجيل
+                    </h4>
+                    <a href="#" class="mt-3">إنشاء حساب جديد</a>
+                    <a href="#" class="mt-3">تسجيل الدخول</a>
+                    <a href="#" class="mt-3">معايير الاشتراك </a>
+                    <a href="#" class="mt-3">المرشد الشخصي</a>
+
+                </div>
+                <div class=" col-xl col-md-6">
+                    <h4>
+                        الدعم والتواصل
+                    </h4>
+                    <a href="#" class="mt-3">تواصل معنا</a>
+                    <a href="#" class="mt-3">الدعم الفني</a>
+                    <a href="#" class="mt-3">الأسئلة الشائعة</a>
+                    <a href="#" class="mt-3">خريطة الموقع</a>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-center align-items-center mt-5 mb-5">
+                <div class="col-md-4 text-center">خريطة الموقع</div>
+                <div class="col-md-4 text-center">المرشد الشخصي</div>
+                <div class="col-md-4 text-center">سياسة الخصوصية</div>
+            </div>
+        </div>
+        <hr style="border-top: 1px dashed #fff; " class="w-75" />
+        <p class="text-center" style="color:#ABABAB;"> ©جميع الحقوق محفوظة لمنصة علوم السُنة النبوية 2021</p>
+    </footer>
+    <!-- end of footer -->
 
 
 
 
 
 
-       <script src="assets/js/accordion.js" type="text/javascript" charset="utf-8"></script>
-      <script src="assets/js/jquery-3.4.1.min.js"></script>
-      <script src="assets/js/jquery.fancybox.min.js"></script>
-      <script src="assets/js/jquery.nice-select.min.js"></script>
-      <script src="assets/js/swiper.min.js"></script>
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/app.js"></script>
-      <script  src="assets/js/jquery.simplePagination.js"></script>
-      <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/accordion.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.simplePagination.js"></script>
+    <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 

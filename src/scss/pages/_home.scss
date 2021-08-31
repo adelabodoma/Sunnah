@@ -1,5 +1,5 @@
 .bg-wrapper{
-    background-image: url('../img/about-bg.png');
+    // background-image: url('../img/about-bg.png');
         background-repeat: no-repeat;
         background-position-x: -621px;
         padding: 158px 0px 93px 0px;
@@ -40,7 +40,7 @@
     }
 }
 .bg-wrapper2{
-    background-image: url('../img/bg2.png');
+    // background-image: url('../img/bg2.png');
     background-repeat: no-repeat;
     padding-bottom: 175px;
     @include media-breakpoint-down(md) {
@@ -303,7 +303,7 @@ float: right;
       }
 }
 .bg-wrapper3{
-    background-image: url('../img/bg3.png');
+    // background-image: url('../img/bg3.png');
     background-repeat: no-repeat;
     padding-bottom: 237px;
     @include media-breakpoint-down(md) {
