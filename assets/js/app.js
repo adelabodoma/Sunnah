@@ -199,6 +199,15 @@ jQuery(document).ready(function ($) {
       // instead of a settings object
     ]
   });
+
+  $(function() {
+    $('.numbers').pagination({
+        items: 400,
+        itemsOnPage: 20,
+       
+        cssStyle: 'light-theme'
+    });
+});
   $('.responsive3').slick({
     dots: true,
     infinite: false,

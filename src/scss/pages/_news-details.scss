@@ -68,6 +68,13 @@
                width: 100%;
               
           }
+          .auther{
+              width: 50px;
+              height: 50px;
+              object-fit: cover;
+              border-radius: 50%;
+              margin-left: 10px;
+          }
        
 }
 .share{
@@ -82,13 +89,13 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    max-width: 100%;
+    // max-width: 100%;
     top: 50%;
-    z-index: 999;
+   
     left: 50%;
-    width: unset !important;
-    object-fit: unset !important;
-    border-radius: unset !important;
+    // width: unset !important;
+    // object-fit: unset !important;
+    // border-radius: unset !important;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }

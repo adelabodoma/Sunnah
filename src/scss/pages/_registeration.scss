@@ -117,7 +117,7 @@ object-fit: cover;
         z-index: 9999;
         width: 40%;
         left: 0;
-        top: 10px;
+       
         border-top: 1px solid;
         z-index: 999;
         background-color: #fff;
@@ -136,6 +136,9 @@ object-fit: cover;
     background-image: url(../img/contact-bg.png);
     background-size: cover;
     padding: 50px;
+    .reverse-align{
+        text-align: left;
+    }
     .icon-square{
         border-radius: 30px;
         background-color: #fff;
