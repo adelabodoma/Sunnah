@@ -20,6 +20,10 @@
         p {
             width: 80%;
         }
+
+        @include media-breakpoint-down(sm){
+            margin-top: 0;
+        }
     }
     .counters-section{
         .rounded-bg{
@@ -696,5 +700,6 @@ transform: translate(-50%, -16%);
           display: inline;
           border-radius: 20px 0px 0px 20px !important;
       }
+    //   display: none;
     }
 }
