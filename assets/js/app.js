@@ -151,7 +151,14 @@ jQuery(document).ready(function ($) {
       tabTrigger.show()
     })
   })
+  $(document).ready(function() {
 
+    $(".fa-search").click(function() {
+       $(".togglesearch").toggle();
+       $("input[type='text']").focus();
+     });
+  
+  });
 
   $(".toggle-password").click(function() {
 
@@ -208,6 +215,9 @@ jQuery(document).ready(function ($) {
 //         cssStyle: 'light-theme'
 //     });
 // });
+$(document).ready(function() {
+  $('select').niceSelect();
+});
   $('.responsive3').slick({
     dots: true,
     infinite: false,

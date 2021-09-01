@@ -365,6 +365,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 0px 20px 20px 0px;
+  
 }
 
 .d-flex.text {
@@ -487,4 +488,41 @@
   overflow: hidden;
   padding: 28px 5px 5px 0 !important;
   margin: 0;
+}
+.little{
+  margin-left: 6px;
+}
+select{
+  direction: rtl;
+  text-align: right !important;
+}
+.nice-select {
+  
+  /* box-sizing: border-box; */
+ 
+  text-align: right !important;
+  
+  height: 42px !important;
+  padding: .375rem .75rem !important;
+  
+   position: relative;
+   flex: 1 1 auto;
+   width: 1%;
+   min-width: 0;
+   margin-bottom: 0;
+   line-height: 29px !important;
+   font-size: 1rem !important;
+
+  
+}
+.nice-select:after {
+  left:0 !important;
+  right: unset !important;
+}
+.nice-select .list {
+  width: 100%;
+}
+.success-section{
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
