@@ -31,7 +31,7 @@
       #{$left}: unset;
       display: flex;
       align-items: center;
-      bottom: 84px;
+      bottom: 154px;
       top: unset;
 
       & > span {
@@ -44,14 +44,23 @@
           background-color: $primary-color;
         }
       }
-
-      @include media-breakpoint-down(sm) {
-        bottom: 100px;
+      @include media-breakpoint-down(md) {
+        bottom: 129px;
         top: unset;
         display: flex;
         & > span {
-          height: 18px;
-          width: 18px;
+          height: 14px;
+          width: 14px;
+          margin-left: 15px;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        bottom: 129px;
+        top: unset;
+        display: flex;
+        & > span {
+          height: 14px;
+          width: 14px;
           margin-left: 15px;
         }
       }
@@ -59,7 +68,7 @@
 
     .swiper-navigation {
       position: absolute;
-      top: 50%;
+      top: 26%;
       left: 0;
       width: 150px;
       justify-content: center;
@@ -92,6 +101,20 @@
   }
   .swiper-slide {
     position: relative;
+    &::after{
+      content: url('../img/curve (2).png');
+      position: absolute;
+      top: 68.9%;
+      @include media-breakpoint-down(lg) {
+       content: "";
+    left: -40%;
+      }
+      @include media-breakpoint-down(sm) {
+        top: 65.4%;
+    left: -124%;
+      }
+
+    }
     .main-pic{
       height: 100%;
       width: 100%;
@@ -169,14 +192,38 @@
   justify-content: center;
   align-items: center;
   width: 100% !important;
-  height: 100% !important;
+  height: 89% !important;
  
   .color-curve{
     position: absolute;
-    bottom: 5%;
-    left: 89px;
+    left: 407px;
+    top: 70%;
     z-index: 999;
-    width: 116px;
+    width: 164px;
+    @include media-breakpoint-down(md) {
+      top: 68%;
+      position: absolute;
+      bottom: 0%;
+      left: 132px;
+      z-index: 999;
+    
+    }
+    @include media-breakpoint-down(sm) {
+      top: 73%; 
+      position: absolute;
+    bottom: 0%;
+    left: 3px;
+    z-index: 999;
+    width: 98px;
+    }
+  }
+  .color-curve2{
+    position: absolute;
+    /* bottom: 5%; */
+    left: 241px;
+    top: 71%;
+    z-index: 999;
+    width: 152px;
     @include media-breakpoint-down(sm) {
                
       position: absolute;
@@ -202,6 +249,7 @@
     height: 100% !important;
     mix-blend-mode: screen;
     background-color: #fff;
+
     object-fit: unset ;
     @include media-breakpoint-down(sm) {
                

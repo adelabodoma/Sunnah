@@ -1,7 +1,8 @@
 .bg-wrapper{
-    background-image: url('../img/fullpage.png');
+    background-image: url('../img/bg1.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
+        
         
         // background-position-x: -621px;
         // padding: 158px 0px 93px 0px;
@@ -42,7 +43,8 @@
     }
 }
 .bg-wrapper2{
-    // background-image: url('../img/bg2.png');
+    background-image: url('../img/bg2.png');
+    background-size: cover;
     background-repeat: no-repeat;
     // padding-bottom: 175px;
     @include media-breakpoint-down(md) {
@@ -120,8 +122,8 @@
         }
         .program-box{
             direction: rtl;
-            box-shadow: 0 0.5rem 30px 0px rgb(0 0 0 / 7%) !important;
-margin: 6px;
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%) !important;
+margin: 17px;
             position: relative;
             border-radius: 30px;
             background-color: #fff;
@@ -161,6 +163,10 @@ margin: 6px;
             }
             .colored{
                 color: $primary-color;
+                margin-right: 8px;
+            }
+            .prog-mid{
+                margin-left: 6px;
             }
             p{
                 img{
@@ -177,7 +183,7 @@ margin: 6px;
     }
 }
 .decoration-wrapper {
-    margin: 5rem 0rem 6rem 0rem;
+    margin: 5rem 0rem 3rem 0rem;
 
     @include media-breakpoint-down(sm) {
                
@@ -264,7 +270,7 @@ z-index: 999;
     .program-box{
         
         direction: rtl;
-margin: 6px;
+margin: 17px;
         position: relative;
         border-radius: 30px;
         background-color: #fff;
@@ -306,7 +312,8 @@ float: right;
       }
 }
 .bg-wrapper3{
-    // background-image: url('../img/bg3.png');
+    background-image: url('../img/bg3.png');
+    background-size: cover;
     background-repeat: no-repeat;
    
     @include media-breakpoint-down(md) {
@@ -367,13 +374,13 @@ float: right;
             direction: ltr;
         }
         .program-box{
-            margin: 6px;
+            margin:0 15px;
             border-radius: 27px;
             background-color: #D5E2DB;
             text-align: center;
-            padding: 10px 0px;
+            padding: 35px 0px;
             img{
-                width: 124px;
+                width: 85px;
                
                 object-fit: cover;
                 display: block;
@@ -452,15 +459,16 @@ float: right;
       }
     }
         .highlight-box{
-            padding: 20px ;
-    border-radius: 20px;
-    background-color: $color-brown;
-   text-align: center;
-   @include media-breakpoint-down(md) {
-               
-  margin: 10px 0px;
-  }
+            padding: 20px 37px;
+            border-radius: 20px;
+            margin: 0 10px;
+            /* margin: 0 10px; */
+            background-color: #1c1a18;
+            text-align: center;
+   @include media-breakpoint-down(sm) {
+text-align: center;
 
+  }  
     img{
         margin: 0 auto;
         text-align: center;
@@ -469,7 +477,7 @@ float: right;
     }
 
 footer{
-    padding: 30px;
+    padding: 134px 30px 50px 30px;
     background-color: $color-brown;
     color: #fff;
     h4{
@@ -696,5 +704,63 @@ transform: translate(-50%, -16%);
           display: inline;
           border-radius: 20px 0px 0px 20px !important;
       }
+    }
+}
+
+
+.first-img{
+    border: 20px solid #fff;
+    border-radius: 30px;
+}
+
+.spaces{
+    margin-bottom: 10px;
+}
+.spaces2{
+    margin-bottom: 20px;
+}
+.spaces3{
+    padding-top: 5rem;
+}
+.font{
+    font-weight: bold;
+}
+.video-icon {
+    position: absolute;
+    background-color: #ce7b2c;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff !important;
+    z-index: 999;
+}
+
+.dark2{
+    opacity: 0.4;
+    height: 98%;
+    width: 100%;
+    background-color: #000;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.flex-resp{
+    @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+    }
+}
+footer {
+   
+   
+    @include media-breakpoint-down(md) {
+        padding: 32px 30px;
     }
 }
