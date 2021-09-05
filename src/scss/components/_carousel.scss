@@ -26,7 +26,6 @@
     padding-bottom: 0;
     padding-top: 0;
 
-    
     .swiper-pagination {
       #{$right}: 50%;
       #{$left}: unset;
@@ -77,8 +76,9 @@
       z-index: 999;
       height: 40px;
       @include media-breakpoint-down(sm) {
-      width: 78px;
-        }
+        display: none;
+        // width: 78px;
+      }
       .swiper-button-next,
       .swiper-button-prev {
         width: 45px;
@@ -91,8 +91,8 @@
         @include media-breakpoint-down(sm) {
           width: 25px;
           height: 25px;
-          }
-    
+        }
+
         &::after {
           font-size: rem(18);
           color: $primary-color;
@@ -102,7 +102,7 @@
   }
   .swiper-slide {
     position: relative;
-    &::after{
+    &::after {
       content: "";
       background-image: url(../img/big-curve.png);
       background-size: contain;
@@ -112,21 +112,20 @@
       height: 100%;
       top: 68.9%;
       @include media-breakpoint-down(lg) {
-       content: "";
-    left: -40%;
+        content: "";
+        left: -40%;
       }
       @include media-breakpoint-down(sm) {
         top: 65.4%;
-    left: -124%;
+        left: -124%;
       }
-
     }
-    .main-pic{
+    .main-pic {
       height: 100%;
       width: 100%;
       object-fit: cover;
     }
-    .overlay{
+    .overlay {
       position: absolute;
       height: 100%;
       width: 100%;
@@ -190,8 +189,7 @@
   // }
 }
 
-
-.swiper-image-container{
+.swiper-image-container {
   position: absolute !important;
   display: flex;
   overflow: hidden;
@@ -199,8 +197,8 @@
   align-items: center;
   width: 100% !important;
   height: 89% !important;
- 
-  .color-curve{
+
+  .color-curve {
     position: absolute;
     left: 407px;
     top: 70%;
@@ -212,18 +210,17 @@
       bottom: 0%;
       left: 132px;
       z-index: 999;
-    
     }
     @include media-breakpoint-down(sm) {
-      top: 73%; 
+      top: 73%;
       position: absolute;
-    bottom: 0%;
-    left: 3px;
-    z-index: 999;
-    width: 98px;
+      bottom: 0%;
+      left: 3px;
+      z-index: 999;
+      width: 98px;
     }
   }
-  .color-curve2{
+  .color-curve2 {
     position: absolute;
     /* bottom: 5%; */
     left: 241px;
@@ -231,34 +228,32 @@
     z-index: 999;
     width: 152px;
     @include media-breakpoint-down(sm) {
-               
       position: absolute;
-    bottom: 0%;
-    left: 41px;
-    z-index: 999;
-    width: 116px;
+      bottom: 0%;
+      left: 41px;
+      z-index: 999;
+      width: 116px;
     }
   }
-  .main-pic{
+  .main-pic {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover;
-    top:0;
+    top: 0;
     left: 0;
     background-color: #fff;
     opacity: 0.6;
   }
-  .overlay{
-    top:0;
+  .overlay {
+    top: 0;
     left: 0;
     width: 100% !important;
     height: 100% !important;
     mix-blend-mode: screen;
     background-color: #fff;
 
-    object-fit: unset ;
+    object-fit: unset;
     @include media-breakpoint-down(sm) {
-               
       object-fit: cover;
     }
   }

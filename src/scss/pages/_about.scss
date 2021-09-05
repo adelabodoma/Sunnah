@@ -1,0 +1,12 @@
+.about {
+  &__item {
+    width: 50% !important;
+    margin-inline-start: auto;
+    margin-inline-end: 50px;
+
+    &--left {
+    margin-inline-start: 50px;
+      margin-inline-end: auto;
+    }
+  }
+}

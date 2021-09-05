@@ -99,7 +99,16 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .shadow2{
     box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 5%) !important;
+}
+
+.news-list {
+    &__item {
+        border: 0!important;
+    }
 }

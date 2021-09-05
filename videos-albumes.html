@@ -1,439 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
-    <link rel="stylesheet" href="assets/css/style-rtl.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/simplePagination.css"
-    />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
 
-    <title>Sunnah - Home</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+  <link rel="stylesheet" href="assets/css/style-rtl.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/simplePagination.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="assets/css/nice-select.css">
 
-  <body>
-    <button id="gotToTopButton" title="Go to top">
-      <i class="icon icon-down-arrow"></i>
-    </button>
+  <title>Sunnah - Home</title>
+</head>
 
-    <div class="loader">
-      <div class="loader__item">
-        <img src="assets/img/logo.png" alt="Logo" />
-        <div></div>
-      </div>
+<body>
+  <button id="gotToTopButton" title="Go to top">
+    <i class="icon icon-down-arrow"></i>
+  </button>
+
+  <div class="loader">
+    <div class="loader__item">
+      <img src="assets/img/logo.png" alt="Logo" />
+      <div></div>
     </div>
+  </div>
 
-    <!-- HEADER SECTION START -->
-    <header class="header home prog">
-      <div class="header__top-nav">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="header__top-nav__right">
-              <img
-                class="header__top-nav__right__image"
-                src="assets/img/logo-top.svg"
-                alt=""
-              />
-              <span class="utl-separator"></span>
-              <div class="header__top-nav__account dropdown">
-                <div class="btn-group">
-                  <a
-                    href="#"
-                    class="
+  <!-- HEADER SECTION START -->
+  <header class="header home prog">
+    <div class="header__top-nav">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="header__top-nav__right">
+            <img class="header__top-nav__right__image" src="assets/img/logo-top.svg" alt="" />
+            <span class="utl-separator"></span>
+            <div class="header__top-nav__account dropdown">
+              <div class="btn-group">
+                <a href="#" class="
                       header__top-nav__account__change-lang
                       utl-down-arrow
                       icon
-                    "
-                    type="button"
-                    id="changeLang"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    ‏
-                    <img
-                      class="header__top-nav__account__change-lang__icon"
-                      src="assets/img/ar.png"
-                    />
-                    <span>تغيير اللغة</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="changeLang">
-                    <a class="dropdown-item" href="#"> عربي</a>
-                    <a class="dropdown-item" href="#">English</a>
-                  </div>
+                    " type="button" id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ‏
+                  <img class="header__top-nav__account__change-lang__icon" src="assets/img/ar.png" />
+                  <span>تغيير اللغة</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="changeLang">
+                  <a class="dropdown-item" href="#"> عربي</a>
+                  <a class="dropdown-item" href="#">English</a>
                 </div>
-                <!-- <div class="d-inline-block">
+              </div>
+              <!-- <div class="d-inline-block">
                             <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
                         </div> -->
-              </div>
-            </div>
-
-            <div class="header__top-nav__left">
-              <div class="header__top-nav__current-date">
-                <span>‏السبت 3 يوليو 2021 - 23 ذو القعدة 1442</span>
-              </div>
-
-              <span class="utl-separator"></span>
-
-              <ul class="social-links">
-                <li class="social-links__item">
-                  <a href="#" class="social-links__item__link">
-                    <i class="icon icon-youtube"></i>
-                  </a>
-                </li>
-                <li class="social-links__item">
-                  <a href="#" class="social-links__item__link">
-                    <i class="icon icon-instagram"></i>
-                  </a>
-                </li>
-                <li class="social-links__item">
-                  <a href="#" class="social-links__item__link">
-                    <i class="icon icon-twitter"></i>
-                  </a>
-                </li>
-                <li class="social-links__item">
-                  <a href="#" class="social-links__item__link">
-                    <i class="icon icon-facebook"></i>
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
-        </div>
-      </div>
-      <nav class="header__nav">
-        <div class="container position-relative">
-          <div class="row">
-            <div class="col-md-11 d-flex">
-              <a href="" class="header__nav__logo">
-                <img
-                  src="assets/img/logo.png"
-                  alt="Logo"
-                  class="header__nav__logo-img"
-                />
-              </a>
-              <ul class="header__nav__items">
-                <li class="header__nav__item">
-                  <a href="#" class="header__nav__item__link">الرئيسية</a>
-                </li>
-                <li class="header__nav__item">
-                  <a
-                    href="#"
-                    class="header__nav__item__link utl-down-arrow"
-                    type="button"
-                    id="program"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >عن المنصة</a
-                  >
 
-                  <ul class="dropdown-menu" aria-labelledby="program">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="header__nav__item">
-                  <a
-                    href="#"
-                    class="header__nav__item__link utl-down-arrow"
-                    type="button"
-                    id="services"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >الاشتراك والتسجيل</a
-                  >
-                  <ul class="dropdown-menu" aria-labelledby="program">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="header__nav__item">
-                  <a
-                    href="#"
-                    class="header__nav__item__link utl-down-arrow"
-                    type="button"
-                    id="services"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >البرامج الدراسية</a
-                  >
-                  <ul class="dropdown-menu" aria-labelledby="program">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">برنامج رقم 1</a>
-                      <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                        <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="header__nav__item">
-                  <a href="#" class="header__nav__item__link">المدونة </a>
-                </li>
-                <li class="header__nav__item">
-                  <a href="#" class="header__nav__item__link"
-                    >التقويم الدراسي
-                  </a>
-                </li>
-                <li class="header__nav__item">
-                  <a href="#" class="header__nav__item__link"
-                    >التواصل والدعم الفني</a
-                  >
-                </li>
-              </ul>
+          <div class="header__top-nav__left">
+            <div class="header__top-nav__current-date">
+              <span>‏السبت 3 يوليو 2021 - 23 ذو القعدة 1442</span>
             </div>
-            <div class="col-md-1 header__nav__login">
-              <div class="d-inline-block">
-                <a id="openSearchBtn" href="#"
-                  ><i class="icon icon-search"></i
-                ></a>
-              </div>
-              <button class="btn utl-btn-primary header__nav__login__button">
-                التسجيل
-              </button>
-            </div>
-          </div>
-          <div class="header__nav__search">
-            <div class="container position-relative">
-              <form action="#" class="header__nav__search__form container">
-                <input
-                  class="header__nav__search__form__input"
-                  type="text"
-                  placeholder="ابحث هنا"
-                />
-                <button class="header__nav__search__form__submit">بحث</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
 
-      <div class="header__mobile-nav">
-        <div
-          class="
-            container
-            header__mobile-nav__container
-            d-flex
-            align-items-center
-            justify-content-between
-          "
-        >
-          <div class="d-flex align-items-center justify-content-between">
-            <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
-              <i class="icon icon-menu"></i>
-            </a>
-            <a href="#" class="header__mobile-nav__logo">
-              <img src="assets/img/logo.png" alt="Logo" />
-            </a>
-          </div>
-          <div class="d-flex align-items-center justify-content-between">
-            <i
-              class="icon icon-search header__mobile-nav__search-button"
-              id="openSearchBtnWithMobile"
-            ></i>
-            <a
-              href="#"
-              class="header__mobile-nav__account"
-              type="button"
-              id="changeLang"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ‏
-              <i class="icon icon-user"></i>
-            </a>
-            <div
-              class="dropdown-menu header__mobile-nav__account-dropdown"
-              aria-labelledby="changeLang"
-            >
-              <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
-              <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
-            </div>
-          </div>
-        </div>
-      </div>
+            <span class="utl-separator"></span>
 
-      <div class="header__mobile">
-        <nav class="nav-drill">
-          <a href="#" id="closeMenu">x</a>
-          <ul class="nav-items nav-level-1">
-            <li class="nav-item">
-              <a class="nav-link" href="#"> الرئيسية </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> من نحن </a>
-            </li>
-            <li class="nav-item nav-expand">
-              <a class="nav-link nav-expand-link" href="#"> المركز الإعلامي </a>
-              <ul class="nav-items nav-expand-content">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> برنامج رقم 1 </a>
-                </li>
-                <li class="nav-item nav-expand">
-                  <a class="nav-link nav-expand-link" href="#">
-                    برنامج رقم 1
-                  </a>
-                  <ul class="nav-items nav-expand-content">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item nav-expand">
-              <a class="nav-link nav-expand-link" href="#"> مركز الوسائط </a>
-              <ul class="nav-items nav-expand-content">
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> برنامج رقم 1 </a>
-                </li>
-                <li class="nav-item nav-expand">
-                  <a class="nav-link nav-expand-link" href="#">
-                    برنامج رقم 1
-                  </a>
-                  <ul class="nav-items nav-expand-content">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"> اتصل بنا </a>
-            </li>
-
-            <a
-              href="#"
-              class="header__mobile__change-lang utl-down-arrow mt-5 mx-3"
-              type="button"
-              id="changeLang"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              ‏ تغيير اللغة</a
-            >
-            <div class="dropdown-menu" aria-labelledby="changeLang">
-              <a class="dropdown-item" href="#">عربي</a>
-              <a class="dropdown-item" href="#">English</a>
-            </div>
-            <ul class="social-links mt-5 mx-3">
+            <ul class="social-links">
               <li class="social-links__item">
                 <a href="#" class="social-links__item__link">
                   <i class="icon icon-youtube"></i>
@@ -455,339 +89,568 @@
                 </a>
               </li>
             </ul>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- HEADER SECTION END -->
-
-    <div class="container">
-      <!-- breadcrumb  -->
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#"><img src="assets/img/home-icon.png" alt="" /></a>
-          </li>
-          <li class="breadcrumb-item active active">
-            <a href="#"> البومات الفيديوهات</a>
-          </li>
-        </ol>
-      </nav>
-      <!-- breadcrumb end  -->
-    </div>
-
-    <div class="data-tabs2 container">
-      <div class="gallery-section">
-        <div class="">
-          <div class="row">
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="gallery-box">
-                <div class="position-relative">
-                  <a
-                    href="assets/img/video.mp4"
-                    data-fancybox="media-videos"
-                    class=""
-                  >
-                  <i class="icon icon-play video-icon"></i>
-                  <img class="w-100" src="assets/img/build.png" alt="Video" />
-                  </a>
-                </div>
-                <div class="desc text-center">
-                  <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-
-      <nav aria-label="Page navigation example" class="w-100">
-        <ul class="pagination pagination-items">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <i class="icon icon-right-arrow"></i>
-                    <span class="sr-only">Previous</span>
-                </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link active" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <i class="icon icon-left-arrow"></i>
-                    <span class="sr-only">Next</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
     </div>
-
-    <footer>
-      <div class="container">
+    <nav class="header__nav">
+      <div class="container position-relative">
         <div class="row">
-          <div class="col-xl col-md-6">
-            <h4>علوم السُنة النبوية</h4>
-            <p class="mt-3">
-              هي المنصة الأولي المتخصصة في التدريس الأكاديمي لعلوم السنة النبوية
-              علي نطاق عالمي بتقنيات التعليم عن بٌعد وفق برامج ومساقات متخصصة
-            </p>
-            <div class="social mt-3">
-              <a href="#"><img src="assets/img/l3.png" alt="" /></a>
-              <a href="#"><img src="assets/img/l4.png" alt="" /></a>
-              <a href="#"><img src="assets/img/l2.png" alt="" /></a>
-              <a href="#"><img src="assets/img/l1.png" alt="" /></a>
+          <div class="col-md-11 d-flex">
+            <a href="" class="header__nav__logo">
+              <img src="assets/img/logo.png" alt="Logo" class="header__nav__logo-img" />
+            </a>
+            <ul class="header__nav__items">
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link">الرئيسية</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="program"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">عن المنصة</a>
+
+                <ul class="dropdown-menu" aria-labelledby="program">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الاشتراك والتسجيل</a>
+                <ul class="dropdown-menu" aria-labelledby="program">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link utl-down-arrow" type="button" id="services"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">البرامج الدراسية</a>
+                <ul class="dropdown-menu" aria-labelledby="program">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                      <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link">المدونة </a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link">التقويم الدراسي
+                </a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#" class="header__nav__item__link">التواصل والدعم الفني</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-1 header__nav__login">
+            <div class="d-inline-block">
+              <a id="openSearchBtn" href="#"><i class="icon icon-search"></i></a>
             </div>
-          </div>
-          <div class="col-xl col-md-6">
-            <h4>عن المنصة</h4>
-            <a href="#" class="mt-3">التعريف بالمنصة </a>
-            <a href="#" class="mt-3">الرؤية و الرسالة </a>
-            <a href="#" class="mt-3">الهيكل الإداري</a>
-            <a href="#" class="mt-3">الهيكل التنظيمي </a>
-          </div>
-          <div class="col-xl col-md-6">
-            <h4>البرامج الدراسية</h4>
-            <a href="#" class="mt-3">البرامج و المساقات الحالية </a>
-            <a href="#" class="mt-3">مساقات و برامج مرتقبة </a>
-            <a href="#" class="mt-3">طريقة التدريس </a>
-            <a href="#" class="mt-3">كيفية الاشتراك</a>
-          </div>
-          <div class="col-xl col-md-6">
-            <h4>الاشتراك والتسجيل</h4>
-            <a href="#" class="mt-3">إنشاء حساب جديد</a>
-            <a href="#" class="mt-3">تسجيل الدخول</a>
-            <a href="#" class="mt-3">معايير الاشتراك </a>
-            <a href="#" class="mt-3">المرشد الشخصي</a>
-          </div>
-          <div class="col-xl col-md-6">
-            <h4>الدعم والتواصل</h4>
-            <a href="#" class="mt-3">تواصل معنا</a>
-            <a href="#" class="mt-3">الدعم الفني</a>
-            <a href="#" class="mt-3">الأسئلة الشائعة</a>
-            <a href="#" class="mt-3">خريطة الموقع</a>
+            <button class="btn utl-btn-primary header__nav__login__button">
+              التسجيل
+            </button>
           </div>
         </div>
-        <div class="row justify-content-center align-items-center mt-5 mb-5">
-          <div class="col-md-4 text-center">خريطة الموقع</div>
-          <div class="col-md-4 text-center">المرشد الشخصي</div>
-          <div class="col-md-4 text-center">سياسة الخصوصية</div>
+        <div class="header__nav__search">
+          <div class="container position-relative">
+            <form action="#" class="header__nav__search__form container">
+              <input class="header__nav__search__form__input" type="text" placeholder="ابحث هنا" />
+              <button class="header__nav__search__form__submit">بحث</button>
+            </form>
+          </div>
         </div>
       </div>
-      <hr style="border-top: 1px dashed #fff" class="w-75" />
-      <p class="text-center" style="color: #ababab">
-        ©جميع الحقوق محفوظة لمنصة علوم السُنة النبوية 2021
-      </p>
-    </footer>
-    <!-- end of footer -->
+    </nav>
 
-    <script
-      src="assets/js/accordion.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/jquery.simplePagination.js"></script>
-    <script
-      src="assets/js/slick.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-  </body>
+    <div class="header__mobile-nav">
+      <div class="
+            container
+            header__mobile-nav__container
+            d-flex
+            align-items-center
+            justify-content-between
+          ">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+            <i class="icon icon-menu"></i>
+          </a>
+          <a href="#" class="header__mobile-nav__logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <i class="icon icon-search header__mobile-nav__search-button" id="openSearchBtnWithMobile"></i>
+          <a href="#" class="header__mobile-nav__account" type="button" id="changeLang" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            ‏
+            <i class="icon icon-user"></i>
+          </a>
+          <div class="dropdown-menu header__mobile-nav__account-dropdown" aria-labelledby="changeLang">
+            <a class="btn utl-btn-primary" href="#">إنشاء حساب جديد</a>
+            <a class="btn utl-btn-outline-primary" href="#">تسجيل الدخول</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__mobile">
+      <nav class="nav-drill">
+        <a href="#" id="closeMenu">x</a>
+        <ul class="nav-items nav-level-1">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> الرئيسية </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> من نحن </a>
+          </li>
+          <li class="nav-item nav-expand">
+            <a class="nav-link nav-expand-link" href="#"> المركز الإعلامي </a>
+            <ul class="nav-items nav-expand-content">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> برنامج رقم 1 </a>
+              </li>
+              <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                  برنامج رقم 1
+                </a>
+                <ul class="nav-items nav-expand-content">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-expand">
+            <a class="nav-link nav-expand-link" href="#"> مركز الوسائط </a>
+            <ul class="nav-items nav-expand-content">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> برنامج رقم 1 </a>
+              </li>
+              <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                  برنامج رقم 1
+                </a>
+                <ul class="nav-items nav-expand-content">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> برنامج فرعي رقم 1 </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> اتصل بنا </a>
+          </li>
+
+          <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button" id="changeLang"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ‏ تغيير اللغة</a>
+          <div class="dropdown-menu" aria-labelledby="changeLang">
+            <a class="dropdown-item" href="#">عربي</a>
+            <a class="dropdown-item" href="#">English</a>
+          </div>
+          <ul class="social-links mt-5 mx-3">
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-youtube"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-instagram"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-twitter"></i>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="#" class="social-links__item__link">
+                <i class="icon icon-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER SECTION END -->
+
+  <div class="container">
+    <!-- breadcrumb  -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#"><img src="assets/img/home-icon.png" alt="" /></a>
+        </li>
+        <li class="breadcrumb-item active active">
+          <a href="#"> البومات الفيديوهات</a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb end  -->
+  </div>
+
+  <div class="data-tabs2 container">
+    <div class="gallery-section">
+      <div class="">
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="gallery-box">
+              <div class="position-relative">
+                <a href="assets/img/video.mp4" data-fancybox="media-videos" class="">
+                  <i class="icon icon-play video-icon"></i>
+                  <img class="w-100" src="assets/img/blog/blog-4.png" alt="Video" />
+                </a>
+              </div>
+              <div class="desc text-center">
+                <p>لوريم إيبسوم هو ببساطة نص شكلي</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="Page navigation example" class="w-100">
+      <ul class="pagination pagination-items">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <i class="icon icon-right-arrow"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <i class="icon icon-left-arrow"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl col-md-6">
+          <h4>علوم السُنة النبوية</h4>
+          <p class="mt-3">
+            هي المنصة الأولي المتخصصة في التدريس الأكاديمي لعلوم السنة النبوية
+            علي نطاق عالمي بتقنيات التعليم عن بٌعد وفق برامج ومساقات متخصصة
+          </p>
+          <div class="social mt-3">
+            <a href="#"><img src="assets/img/l3.png" alt="" /></a>
+            <a href="#"><img src="assets/img/l4.png" alt="" /></a>
+            <a href="#"><img src="assets/img/l2.png" alt="" /></a>
+            <a href="#"><img src="assets/img/l1.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="col-xl col-md-6">
+          <h4>عن المنصة</h4>
+          <a href="#" class="mt-3">التعريف بالمنصة </a>
+          <a href="#" class="mt-3">الرؤية و الرسالة </a>
+          <a href="#" class="mt-3">الهيكل الإداري</a>
+          <a href="#" class="mt-3">الهيكل التنظيمي </a>
+        </div>
+        <div class="col-xl col-md-6">
+          <h4>البرامج الدراسية</h4>
+          <a href="#" class="mt-3">البرامج و المساقات الحالية </a>
+          <a href="#" class="mt-3">مساقات و برامج مرتقبة </a>
+          <a href="#" class="mt-3">طريقة التدريس </a>
+          <a href="#" class="mt-3">كيفية الاشتراك</a>
+        </div>
+        <div class="col-xl col-md-6">
+          <h4>الاشتراك والتسجيل</h4>
+          <a href="#" class="mt-3">إنشاء حساب جديد</a>
+          <a href="#" class="mt-3">تسجيل الدخول</a>
+          <a href="#" class="mt-3">معايير الاشتراك </a>
+          <a href="#" class="mt-3">المرشد الشخصي</a>
+        </div>
+        <div class="col-xl col-md-6">
+          <h4>الدعم والتواصل</h4>
+          <a href="#" class="mt-3">تواصل معنا</a>
+          <a href="#" class="mt-3">الدعم الفني</a>
+          <a href="#" class="mt-3">الأسئلة الشائعة</a>
+          <a href="#" class="mt-3">خريطة الموقع</a>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center mt-5 mb-5">
+        <div class="col-md-4 text-center">خريطة الموقع</div>
+        <div class="col-md-4 text-center">المرشد الشخصي</div>
+        <div class="col-md-4 text-center">سياسة الخصوصية</div>
+      </div>
+    </div>
+
+    <p class="footer__copyright">
+      ©جميع الحقوق محفوظة لمنصة علوم السُنة النبوية 2021
+    </p>
+  </footer>
+  <!-- end of footer -->
+
+  <script src="assets/js/accordion.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/jquery.simplePagination.js"></script>
+  <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
 </html>

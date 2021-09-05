@@ -54,6 +54,7 @@
   .decoration-wrapper {
     @include media-breakpoint-down(sm) {
       margin: 4rem 0px;
+    background-image: none;
     }
   }
   .decorated-title {
@@ -298,7 +299,7 @@
 }
 .bg-wrapper3 {
   background-image: url("../img/bg3.png");
-  background-size: cover;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
 
   @include media-breakpoint-down(md) {
@@ -306,12 +307,24 @@
   }
   @include media-breakpoint-down(sm) {
     padding-bottom: 0;
+    background-image: none;
   }
 
   .app-download {
-    position: relative;
+    // position: relative;
+    margin-top: 140px;
     @include media-breakpoint-down(sm) {
-      margin-bottom: 272px;
+      // margin-bottom: 272px;
+    }
+
+
+    &__wrapper {
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    &__content {
+      margin-inline-start: 50px;
     }
     .mob-img {
       width: 100%;
@@ -322,12 +335,12 @@
       // transform: translate(-50%, -50%);
     }
     .desc {
-      position: absolute;
-      left: 50%;
-      top: 50%;
+      // position: absolute;
+      // left: 50%;
+      // top: 50%;
 
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      // -webkit-transform: translate(-50%, -50%);
+      // transform: translate(-50%, -50%);
       @include media-breakpoint-down(sm) {
         margin-top: 100px;
       }
@@ -348,8 +361,33 @@
         }
       }
     }
+
+    @include media-breakpoint-down(sm){
+      padding: 20px;
+      &__wrapper {
+        flex-wrap: wrap;
+      }
+
+      &__content {
+      margin-inline-start: 0;
+      }
+
+      & .btns   {
+        flex-direction: column;
+        & > * {
+          display: block;
+          width: 100%;
+          margin: 0!important;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      
+    }
   }
   .partners-section {
+    margin-bottom: 140px;
     .slick-list {
       direction: ltr;
     }
