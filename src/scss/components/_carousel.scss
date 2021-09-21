@@ -51,7 +51,7 @@
         & > span {
           height: 14px;
           width: 14px;
-          margin-left: 15px;
+          margin-#{$right}: 15px;
         }
       }
       @include media-breakpoint-down(sm) {
@@ -61,7 +61,7 @@
         & > span {
           height: 14px;
           width: 14px;
-          margin-left: 15px;
+          margin-#{$right}: 15px;
         }
       }
     }
@@ -69,7 +69,7 @@
     .swiper-navigation {
       position: absolute;
       top: 26%;
-      left: 0;
+      #{$right}: 0;
       width: 150px;
       justify-content: center;
       transform: rotate(90deg);
@@ -113,11 +113,11 @@
       top: 68.9%;
       @include media-breakpoint-down(lg) {
         content: "";
-        left: -40%;
+        #{$right}: -40%;
       }
       @include media-breakpoint-down(sm) {
         top: 65.4%;
-        left: -124%;
+        #{$right}: -124%;
       }
     }
     .main-pic {
@@ -200,7 +200,7 @@
 
   .color-curve {
     position: absolute;
-    left: 407px;
+    #{$right}: 407px;
     top: 70%;
     z-index: 999;
     width: 240px;
@@ -208,14 +208,14 @@
       top: 68%;
       position: absolute;
       bottom: 0%;
-      left: 132px;
+      #{$right}: 132px;
       z-index: 999;
     }
     @include media-breakpoint-down(sm) {
       top: 73%;
       position: absolute;
       bottom: 0%;
-      left: 3px;
+      #{$right}: 3px;
       z-index: 999;
       width: 98px;
     }
@@ -223,14 +223,14 @@
   .color-curve2 {
     position: absolute;
     /* bottom: 5%; */
-    left: 241px;
+    #{$right}: 241px;
     top: 71%;
     z-index: 999;
     width: 152px;
     @include media-breakpoint-down(sm) {
       position: absolute;
       bottom: 0%;
-      left: 41px;
+      #{$right}: 41px;
       z-index: 999;
       width: 116px;
     }
@@ -240,13 +240,13 @@
     height: 100% !important;
     object-fit: cover;
     top: 0;
-    left: 0;
+    #{$right}: 0;
     background-color: #fff;
     opacity: 0.6;
   }
   .overlay {
     top: 0;
-    left: 0;
+    #{$right}: 0;
     width: 100% !important;
     height: 100% !important;
     mix-blend-mode: screen;

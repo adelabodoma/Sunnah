@@ -25,7 +25,7 @@
   }
   .breadcrumb-item + .breadcrumb-item::before {
     float: right;
-    padding-left: 0.5rem;
+    padding-#{$right}: 0.5rem;
     color: #6c757d;
     font-family: $icomoon-font-family;
     content: "\e908";
@@ -51,7 +51,7 @@
     border-radius: 30px;
     position: absolute;
     top: 92%;
-    left: 50%;
+    #{$right}: 50%;
     -webkit-transform: translate(-50%, -16%);
     transform: translate(-50%, -16%);
     @include media-breakpoint-down(md) {
@@ -180,7 +180,7 @@
       background-color: $orange-bg;
       border-color: none;
       color: $primary-color;
-      border-right: 5px solid $primary-color;
+      border-#{$left}: 5px solid $primary-color;
       border-bottom: none;
     }
     .list-group-item.active {
@@ -189,7 +189,7 @@
       background-color: $orange-bg;
       border-color: none;
       color: $primary-color;
-      border-right: 5px solid $primary-color;
+      border-#{$left}: 5px solid $primary-color;
       border-bottom: none;
     }
   }
@@ -224,7 +224,7 @@
         font-weight: 600;
       }
       img {
-        margin-left: 12px;
+        margin-#{$right}: 12px;
       }
       padding: 20px 0px 20px 20px;
       @include media-breakpoint-down(sm) {
@@ -242,7 +242,7 @@
       margin-top: 3px;
 
       background-repeat: no-repeat;
-      margin-left: 20px;
+      margin-#{$right}: 20px;
       display: block;
     }
   }
@@ -330,8 +330,8 @@
       font-family: "FontAwesome";
       font-size: 13px;
       color: #ababab;
-      float: left;
-      margin-left: 5px;
+      float: #{$right};
+      margin-#{$right}: 5px;
     }
   }
   .panel {

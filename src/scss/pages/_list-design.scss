@@ -68,20 +68,20 @@
       .floated-sign {
         color: #fb4c4c;
         background-color: rgba(251, 76, 76, 0.1);
-        left: 0;
+        #{$right}: 0;
         top: 10%;
         border-radius: 0px 10px 10px 0px;
         position: absolute;
         padding: 10px;
         font-weight: 600;
         @include media-breakpoint-down(md) {
-          left: 14px;
+          #{$right}: 14px;
           top: -424px;
           color: #fff;
           background-color: rgba(251, 76, 76, 1);
         }
         @include media-breakpoint-down(sm) {
-          left: 14px;
+          #{$right}: 14px;
           top: -219px;
         }
         .red-bold {
@@ -98,7 +98,7 @@
         color: #ababab;
       }
       .margino.d-flex {
-        margin-left: 10px;
+        margin-#{$right}: 10px;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -107,7 +107,7 @@
         justify-content: center;
         align-items: center;
         img {
-          margin-right: 5px;
+          margin-#{$left}: 5px;
         }
       }
 
@@ -115,7 +115,7 @@
         font-weight: 600;
       }
       img {
-        margin-left: 5px;
+        margin-#{$right}: 5px;
         @include media-breakpoint-down(sm) {
           width: 25px;
           height: 25px;
@@ -133,7 +133,7 @@
   .list-group {
     display: flex;
     flex-direction: row;
-    padding-left: 0;
+    padding-#{$right}: 0;
     margin-bottom: 0;
     border-radius: 0.25rem;
     .list-group-item.active {
@@ -177,7 +177,7 @@
       background-color: #f9f9f9;
       border-radius: 10px;
       padding: 20px;
-      margin-left: 5px;
+      margin-#{$right}: 5px;
     }
     .special-box.d-flex {
       @include media-breakpoint-down(sm) {
@@ -303,7 +303,7 @@
     object-fit: cover;
   }
   .margin-modify {
-    padding-right: 16%;
+    padding-#{$left}: 16%;
   }
   .d-flex.special-box {
     align-items: center;
@@ -313,7 +313,7 @@
     img {
       border-radius: 30px;
       padding: 20px;
-      margin-left: 20px;
+      margin-#{$right}: 20px;
       background-color: #fff;
     }
   }
@@ -429,7 +429,7 @@
   border-color: #444;
   box-shadow: 0 1px 0 rgb(255 255 255), 0 0 2px rgb(0 0 0 / 30%) inset;
   cursor: default;
-  margin-left: 8px;
+  margin-#{$right}: 8px;
 }
 
 // .page-link.next {
@@ -453,10 +453,10 @@
   width: 32px;
   height: 32px;
   border-radius: 50% !important;
-  margin-left: 5px;
+  margin-#{$right}: 5px;
 }
 .current.prev {
-  margin-left: 15px;
+  margin-#{$right}: 15px;
   background-color: #fff !important;
   width: 30px;
   height: 30px;
@@ -474,7 +474,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 11px;
+    #{$right}: 11px;
     top: 8px;
   }
 }
@@ -490,7 +490,7 @@
   margin: 0;
 }
 .little{
-  margin-left: 6px;
+  margin-#{$right}: 6px;
 }
 select{
   direction: rtl;
@@ -516,8 +516,8 @@ select{
   
 }
 .nice-select:after {
-  left:0 !important;
-  right: unset !important;
+  #{$right}:0 !important;
+  #{$left}: unset !important;
 }
 .nice-select .list {
   width: 100%;
