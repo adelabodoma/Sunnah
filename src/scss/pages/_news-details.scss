@@ -20,7 +20,7 @@
         top: 182%;
         z-index: 999;
         padding: 50px;
-        #{$right}:50%;
+        left:50%;
        background-color: #fff;
         text-align: right;
         -webkit-transform: translate(-50%, -50%);
@@ -95,7 +95,7 @@
     padding: 20px;
     border-radius: 50%;
     top: 50%;
-    #{$right}: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #fff !important;

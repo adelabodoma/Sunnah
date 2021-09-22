@@ -200,7 +200,7 @@
 
   .color-curve {
     position: absolute;
-    #{$right}: 407px;
+    left: 407px;
     top: 70%;
     z-index: 999;
     width: 240px;
@@ -208,14 +208,14 @@
       top: 68%;
       position: absolute;
       bottom: 0%;
-      #{$right}: 132px;
+     left: 132px;
       z-index: 999;
     }
     @include media-breakpoint-down(sm) {
       top: 73%;
       position: absolute;
       bottom: 0%;
-      #{$right}: 3px;
+     left: 3px;
       z-index: 999;
       width: 98px;
     }

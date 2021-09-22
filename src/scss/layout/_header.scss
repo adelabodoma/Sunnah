@@ -360,7 +360,7 @@
   .icon {
     position: absolute;
     top: 50%;
-    #{$right}: 50%;
+    left: 50%;
     transform: rotate(180deg) translate(9px, 5px);
   }
 }

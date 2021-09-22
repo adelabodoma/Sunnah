@@ -18,6 +18,10 @@
   color: #ABABAB;
   font-family: $icomoon-font-family;
   content: "\e908";
+
+  @if $direction == ltr {
+    transform: rotate(180deg);
+  }
 }
 .badge {
   background-color: $green-bg;
@@ -32,7 +36,7 @@
 .data-tabs2 {
   .program-box {
     border: 1px solid rgba(0, 0, 0, 0.125);
-    direction: rtl;
+    // direction: rtl;
     margin: 10px;
     justify-content: center;
     align-items: center;
@@ -196,6 +200,9 @@
     }
     .light-text {
       color: #ababab;
+    }
+    .margino {
+      margin-#{$right}: 15px
     }
   }
 //   .page-link {

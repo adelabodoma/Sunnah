@@ -13,7 +13,7 @@
   .no {
     border: none !important;
     text-align: #{$left} !important;
-    direction: rtl;
+    // direction: rtl;
   }
   .form-control {
     height: 42px;
@@ -139,7 +139,7 @@
   .reverse-align {
     text-align: left;
   }
-  .icon-square {
+  .square-icon {
     border-radius: 30px;
     background-color: #fff;
     padding: 20px;
@@ -152,8 +152,8 @@
   }
 }
 .unique {
-  direction: rtl !important;
-  text-align: right;
+  // direction: rtl !important;
+  text-align: #{$right};
 
   .btn-secondary {
     color: #495057 !important;
