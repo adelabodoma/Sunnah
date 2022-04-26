@@ -102,24 +102,24 @@
   }
   .swiper-slide {
     position: relative;
-    &::after {
-      content: "";
-      background-image: url(../img/big-curve.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 68.9%;
-      @include media-breakpoint-down(lg) {
-        content: "";
-        #{$right}: -40%;
-      }
-      @include media-breakpoint-down(sm) {
-        top: 65.4%;
-        #{$right}: -124%;
-      }
-    }
+    // &::after {
+    //   content: '';
+    //   background-image: url(../img/big-curve.png);
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 68.9%;
+    //   @include media-breakpoint-down(lg) {
+    //     content: '';
+    //     #{$right}: -40%;
+    //   }
+    //   @include media-breakpoint-down(sm) {
+    //     top: 65.4%;
+    //     #{$right}: -124%;
+    //   }
+    // }
     .main-pic {
       height: 100%;
       width: 100%;
@@ -133,11 +133,11 @@
     }
 
     .swiper-image-container {
-      position: relative;
+      // position: relative;
       height: 100%;
       width: 100%;
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         right: 0;
@@ -151,7 +151,7 @@
   }
 }
 
-[class$="__controls"] {
+[class$='__controls'] {
   position: relative;
   // height: 50px;
   position: absolute;
@@ -190,7 +190,7 @@
 }
 
 .swiper-image-container {
-  position: absolute !important;
+  // position: absolute !important;
   display: flex;
   overflow: hidden;
   justify-content: center;
@@ -200,25 +200,25 @@
 
   .color-curve {
     position: absolute;
-    left: 407px;
-    top: 70%;
+    left: 20%;
+    bottom: 4%;
     z-index: 999;
     width: 240px;
-    @include media-breakpoint-down(md) {
-      top: 68%;
-      position: absolute;
-      bottom: 0%;
-     left: 132px;
-      z-index: 999;
-    }
-    @include media-breakpoint-down(sm) {
-      top: 73%;
-      position: absolute;
-      bottom: 0%;
-     left: 3px;
-      z-index: 999;
-      width: 98px;
-    }
+    // @include media-breakpoint-down(md) {
+    //   top: 68%;
+    //   position: absolute;
+    //   bottom: 0%;
+    //   left: 132px;
+    //   z-index: 999;
+    // }
+    // @include media-breakpoint-down(sm) {
+    //   top: 73%;
+    //   position: absolute;
+    //   bottom: 0%;
+    //   left: 3px;
+    //   z-index: 999;
+    //   width: 98px;
+    // }
   }
   .color-curve2 {
     position: absolute;
@@ -242,7 +242,8 @@
     top: 0;
     #{$right}: 0;
     background-color: #fff;
-    opacity: 0.6;
+    // opacity: 0.6;
+    border-bottom: 30px solid #ce7b2c;
   }
   .overlay {
     top: 0;
@@ -256,5 +257,19 @@
     @include media-breakpoint-down(sm) {
       object-fit: cover;
     }
+  }
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  padding-bottom: 40px !important;
+
+  * div,
+  & div:first-child {
+    height: 100% !important;
   }
 }

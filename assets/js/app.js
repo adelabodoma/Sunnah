@@ -139,28 +139,28 @@ jQuery(document).ready(function ($) {
 
 
   // Form Validation
-  $('#subscribeEmail').keydown(function(){
+  $('#subscribeEmail').keydown(function () {
     $('#invalidEmail').hide()
   })
   var triggerTabList = [].slice.call(document.querySelectorAll('#list-tab a'))
   triggerTabList.forEach(function (triggerEl) {
     var tabTrigger = new bootstrap.Tab(triggerEl)
-  
+
     triggerEl.addEventListener('click', function (event) {
       event.preventDefault()
       tabTrigger.show()
     })
   })
-  $(document).ready(function() {
+  $(document).ready(function () {
 
-    $(".fa-search").click(function() {
-       $(".togglesearch").toggle();
-       $("input[type='text']").focus();
-     });
-  
+    $(".fa-search").click(function () {
+      $(".togglesearch").toggle();
+      $("input[type='text']").focus();
+    });
+
   });
 
-  $(".toggle-password").click(function() {
+  $(".toggle-password").click(function () {
 
     // $(this).toggleClass("fa-eye fa-eye-slash");
     var input = $($(this).attr("toggle"));
@@ -173,10 +173,11 @@ jQuery(document).ready(function ($) {
   $('.responsive').slick({
     dots: true,
     infinite: false,
-    arrows:true,
+    arrows: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -205,23 +206,25 @@ jQuery(document).ready(function ($) {
       // settings: "unslick"
       // instead of a settings object
     ]
+  }).on('setPosition', function (event, slick) {
+    slick.$slides.css('height', slick.$slideTrack.height() + 'px');
   });
 
-//   $(function() {
-//     $('.numbers').pagination({
-//         items: 400,
-//         itemsOnPage: 20,
-       
-//         cssStyle: 'light-theme'
-//     });
-// });
-$(document).ready(function() {
-  $('select').niceSelect();
-});
+  //   $(function() {
+  //     $('.numbers').pagination({
+  //         items: 400,
+  //         itemsOnPage: 20,
+
+  //         cssStyle: 'light-theme'
+  //     });
+  // });
+  $(document).ready(function () {
+    $('select').niceSelect();
+  });
   $('.responsive3').slick({
     dots: true,
     infinite: false,
-    arrows:true,
+    arrows: true,
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 2,
@@ -257,7 +260,7 @@ $(document).ready(function() {
   $('.responsive2').slick({
     dots: true,
     infinite: false,
-    arrows:true,
+    arrows: true,
     speed: 300,
     slidesToShow: 6,
     slidesToScroll: 6,
@@ -290,22 +293,22 @@ $(document).ready(function() {
       // instead of a settings object
     ]
   });
-  
-    
-    
-      $(document).on('ready', function() {
-        $(".lazy").slick({
-          lazyLoad: 'ondemand', // ondemand progressive anticipated
-          infinite: true,
-          arrows:true
-        });
-      });
-     
-  
+
+
+
+  $(document).on('ready', function () {
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true,
+      arrows: true
+    });
+  });
+
+
 });
 
 
-function changeEventContainerPosition(){
+function changeEventContainerPosition() {
   var element_position = $('#footer').offset() && $('#footer').offset().top;
   var screen_height = $(window).height();
   var activation_offset = 0.5;//determines how far up the the page the element needs to be before triggering the function
@@ -316,9 +319,9 @@ function changeEventContainerPosition(){
   var element_in_view = y_scroll_pos > activation_point;
   var has_reached_bottom_of_page = max_scroll_height <= y_scroll_pos && !element_in_view;
 
-  if(element_in_view || has_reached_bottom_of_page) {
-      //Do something
-      $('.event-details__container').css('bottom', '450px')
+  if (element_in_view || has_reached_bottom_of_page) {
+    //Do something
+    $('.event-details__container').css('bottom', '450px')
   }
 }
 
@@ -334,7 +337,7 @@ function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
     $('.event-details__container').css('bottom', '50px');
     changeEventContainerPosition()
-  }else {
+  } else {
     $('.event-details__container').css('bottom', '-250px')
   }
 }
