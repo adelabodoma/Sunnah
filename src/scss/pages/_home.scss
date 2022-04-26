@@ -521,6 +521,7 @@ footer {
   }
 }
 .news-section {
+  height: 100%;
   .slick-next {
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
     background-color: #fff !important;
@@ -569,7 +570,7 @@ footer {
     align-items: center;
     border-radius: 30px;
     background-color: #fff !important;
-
+    height: 100%;
     .prog-img {
       border-radius: 30px;
       width: 100%;
@@ -592,6 +593,11 @@ footer {
         padding: 20px;
       }
     }
+  }
+
+  &__item {
+    min-height: 100% !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -616,6 +622,10 @@ footer {
     .desc {
       padding: 20px;
     }
+  }
+
+  &__item {
+    height: inherit !important;
   }
 }
 

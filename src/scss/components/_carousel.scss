@@ -243,7 +243,17 @@
     #{$right}: 0;
     background-color: #fff;
     // opacity: 0.6;
-    border-bottom: 30px solid #ce7b2c;
+    // border-bottom: 30px solid #ce7b2c;
+    padding-bottom: 14px;
+    background: linear-gradient(
+        to left,
+        rgb(1 151 77) 0%,
+        rgb(206 123 44) 12%,
+        rgb(9 150 75) 47%,
+        rgb(206 123 44) 100%
+      )
+      left bottom #777 no-repeat;
+    background-size: 100% 14px;
   }
   .overlay {
     top: 0;
