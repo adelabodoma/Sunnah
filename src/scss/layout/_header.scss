@@ -3,7 +3,7 @@
     clip-path: ellipse(174% 100% at 50% 0%);
 
     @include media-breakpoint-down(sm) {
-      height: 100vh;
+      height: calc(73vh + 85px);
     }
 
     @media (min-height: 1300px) {
@@ -335,6 +335,11 @@
     bottom: 17px;
     z-index: 99;
     width: 250px;
+
+    @include media-breakpoint-down(sm) {
+      width: 120px;
+      bottom: 5px;
+    }
   }
 
   @include media-breakpoint-down(lg) {
