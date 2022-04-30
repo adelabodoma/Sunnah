@@ -49,8 +49,8 @@
   .dropdown {
     direction: ltr;
     @if $direction == ltr {
-        direction: rtl;
-      }
+      direction: rtl;
+    }
   }
   .form-padding {
     padding: 70px;
@@ -80,7 +80,7 @@
   }
   .dropdown-toggle {
     &::after {
-      content: "\e900" !important;
+      content: '\e900' !important;
       border: none !important;
     }
   }
@@ -133,8 +133,14 @@
   }
 }
 .contact {
-  background-image: url(../img/contact-bg.png);
-  background-size: cover;
+  background-color: #f8f8f8;
+  background-image: url(../img/contact-bg-2.png);
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: -50% 50%;
+  padding: 50px;
+  background-size: 50%;
+
   padding: 50px;
   .reverse-align {
     text-align: left;
@@ -165,7 +171,7 @@
     vertical-align: 0.255em;
     margin-#{$left}: 307%;
     /* float: left; */
-    content: "";
+    content: '';
     border-top: 0.3em solid;
     border-#{$left}: 0.3em solid transparent;
     border-bottom: 0;
@@ -175,14 +181,14 @@
       margin-#{$right}: 0.255em;
       vertical-align: 0.255em;
       margin-#{$left}: 414%;
-      content: "";
+      content: '';
     }
     @include media-breakpoint-down(sm) {
       display: inline-block;
       margin-#{$right}: 0.255em;
       vertical-align: 0.255em;
       margin-#{$left}: 50%;
-      content: "";
+      content: '';
     }
   }
   .dropdown-menu.show {

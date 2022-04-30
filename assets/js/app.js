@@ -158,6 +158,12 @@ jQuery(document).ready(function ($) {
       $("input[type='text']").focus();
     });
 
+
+    $('.program-details__tabs .list-group-item').on('click', (event) => {
+      $('.program-details__tabs .list-group-item').removeClass('active');
+      $(event.target).addClass('active')
+    })
+
   });
 
   $(".toggle-password").click(function () {
